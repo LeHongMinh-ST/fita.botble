@@ -19,7 +19,7 @@ class ComposerServiceProvider extends ServiceProvider
     {
         $view->composer(['core/base::layouts.partials.top-header', 'core/acl::auth.master'], function (View $view) {
             $themes = Assets::getThemes();
-
+            $locales = Assets::getAdminLocales();
             $defaultTheme = setting('default_admin_theme', config('core.base.general.default-theme'));
 
             if (Auth::check() && !session()->has('admin-theme') && !app()->environment('demo')) {
@@ -40,7 +40,7 @@ class ComposerServiceProvider extends ServiceProvider
 
             session(['admin-theme' => $activeTheme]);
 
-            $view->with(compact('themes', 'activeTheme'));
+            $view->with(compact('themes', 'activeTheme', 'locales'));
         });
 
         $view->composer(['core/media::config'], function () {

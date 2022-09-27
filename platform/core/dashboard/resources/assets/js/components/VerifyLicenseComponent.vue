@@ -1,6 +1,6 @@
 <template>
     <div class="note note-warning" v-if="!verified">
-        <p>Your license is invalid, please contact support. If you didn't setup license code, please go to <a :href="settingUrl">Settings</a> to activate license!</p>
+<!--        <p>Your license is invalid, please contact support. If you didn't setup license code, please go to <a :href="settingUrl">Settings</a> to activate license!</p>-->
     </div>
 </template>
 
@@ -31,7 +31,7 @@
             };
         },
         mounted() {
-            this.verifyLicense();
+            // this.verifyLicense();
         },
 
         methods: {

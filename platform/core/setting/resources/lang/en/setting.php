@@ -29,6 +29,7 @@ return [
         'time_zone' => 'Timezone',
         'default_admin_theme' => 'Default admin theme',
         'enable_change_admin_theme' => 'Enable change admin theme?',
+        'enable_multi_language_in_admin' => 'Enable multi language in admin?',
         'enable' => 'Enable',
         'disable' => 'Disable',
         'enable_cache' => 'Enable cache?',

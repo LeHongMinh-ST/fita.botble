@@ -23,6 +23,7 @@ return [
             'seo_description' => 'Mô tả SEO (tối đa 120 kí tự)',
         ],
         'enable_change_admin_theme' => 'Cho phép thay đổi giao diện quản trị?',
+        'enable_multi_language_in_admin' => 'Cho phép thay đổi ngôn ngữ trang quản trị?',
         'enable' => 'Bật',
         'disable' => 'Tắt',
         'enable_cache' => 'Bật bộ nhớ đệm?',
