@@ -53,7 +53,7 @@ return [
             // You may use this event to set up your assets.
             $theme->asset()->usePath()->add('bootstrap', 'css/bootstrap.min.css');
             $theme->asset()->usePath()->add('meanmenu', 'css/meanmenu.css');
-            $theme->asset()->usePath()->add('owl.meanmenu', 'css/owl.meanmenu.min.css');
+            $theme->asset()->usePath()->add('owl.carousel', 'css/owl.carousel.min.css');
             $theme->asset()->usePath()->add('owl.theme', 'css/owl.theme.default.min.css');
             $theme->asset()->usePath()->add('magnific-popup', 'css/magnific-popup.css');
             $theme->asset()->usePath()->add('flaticon', 'css/flaticon.css');

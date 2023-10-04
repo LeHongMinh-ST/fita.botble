@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6">
                 <div class="footer-logo-area">
-                    <a href="index.html"><img src="{{ Theme::asset()->url('images/white-logo.png') }} " alt="Image"></a>
+                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
+                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <p>Sanu University was established by J.H Merthon in 1810 for the public benefit. Afterwards, it is
                         recognized globally</p>
                     <div class="contact-list">
