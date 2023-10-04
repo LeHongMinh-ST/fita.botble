@@ -2,3 +2,21 @@
     width: 50px;
 }
 
+.paginations ul li span {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    border: 1px solid #eee;
+    display: inline-block;
+    transition: all ease .5s;
+    color: #111d5e;
+    font-size: 18px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
+}
+
+
+.paginations .pagination {
+    justify-content: center;
+}
