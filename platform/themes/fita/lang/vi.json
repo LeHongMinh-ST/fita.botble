@@ -13,5 +13,20 @@
     "Oh no": "Ôi không",
     "Please try again in a few minutes, or alternatively return to the homepage by <a href=\":link\">clicking here</a>.": "Vui lòng thử lại trong vài phút, hoặc trở lại trang chủ bằng cách <a href=\":link\">nhấp vào đây</a>.",
     "Read More": "Đọc thêm",
-    "Latest News": "Tin tức mới nhất"
+    "Latest News": "Tin tức mới nhất",
+    "Recent Posts": "Bài đăng gần đây",
+    "Right sidebar": "Thanh bên phải",
+    "Left sidebar": "Thanh bên trái",
+    "This is a right sidebar for fita theme": "Đây là thanh bên phải cho chủ đề fita",
+    "Name": "Tên",
+    "Email": "Email",
+    "Number posts to display": "Số bài đăng để hiển thị",
+    "Search": "Tìm kiếm",
+    "Find your post...": "Tìm bài đăng của bạn ...",
+    "Placeholder": "Placeholder",
+    "Search result for": "Kết quả tìm kiếm cho",
+    "Category List": "Danh mục",
+    "Category Ids": "Id của danh mục",
+    "Category Featured": "Danh mục nổi bật",
+    "There is no data to display!": "Không có dữ liệu để hiển thị!"
 }

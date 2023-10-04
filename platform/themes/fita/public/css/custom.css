@@ -20,3 +20,15 @@
 .paginations .pagination {
     justify-content: center;
 }
+
+.paginations ul li.active span{
+    background-color: #2870a2;
+    color: #fff;
+    border: 1px solid #2870a2
+}
+.language_bar_list li a img {
+    margin-top: 3px;
+}
+.language_bar_list li a span {
+    color: #fff!important;
+}
