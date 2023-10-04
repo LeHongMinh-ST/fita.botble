@@ -1,0 +1,8 @@
+{
+    "name": "Fita",
+    "namespace": "Theme\\Fita\\",
+    "description": "This is a fita theme",
+    "author": "ST-TEAM",
+    "version": "1.0",
+    "required_plugins": []
+}

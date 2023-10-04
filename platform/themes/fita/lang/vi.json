@@ -1,0 +1,15 @@
+{
+    "Home": "Trang chủ",
+    "Page could not be found": "Không tìm thấy trang",
+    "This may have occurred because of several reasons": "Điều này có thể xảy ra vì một số lý do",
+    "The page you requested does not exist.": "Trang bạn yêu cầu không tồn tại.",
+    "The link you clicked is no longer.": "Liên kết bạn đã nhấp không còn nữa.",
+    "The page may have moved to a new location.": "Trang có thể đã được chuyển đến một vị trí mới.",
+    "An error may have occurred.": "An error may have occurred.",
+    "You are not authorized to view the requested resource.": "Bạn không được phép xem tài nguyên yêu cầu.",
+    "Page could not be loaded": "Không thể tải trang",
+    "Service Unavailable": "Dịch vụ không khả dụng",
+    "Sorry, we are doing some maintenance. Please check back soon.": "Xin lỗi, chúng tôi đang thực hiện bảo trì. Vui lòng quay lại sau.",
+    "Oh no": "Ôi không",
+    "Please try again in a few minutes, or alternatively return to the homepage by <a href=\":link\">clicking here</a>.": "Vui lòng thử lại trong vài phút, hoặc trở lại trang chủ bằng cách <a href=\":link\">nhấp vào đây</a>."
+}
