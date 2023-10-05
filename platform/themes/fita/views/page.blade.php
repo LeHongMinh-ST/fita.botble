@@ -21,15 +21,14 @@
             </div>
         </div>
     </div>
+    <div class="main-content pt-100 pb-70">
+        <div class="container">
+            {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
+        </div>
+    </div>
 
-    @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($page)))
-        {!! render_object_gallery($galleries) !!}
-    @endif
-    {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
+
 
 @else
-    @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($page)))
-        {!! render_object_gallery($galleries) !!}
-    @endif
     {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
 @endif

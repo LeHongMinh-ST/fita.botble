@@ -32,3 +32,8 @@
 .language_bar_list li a span {
     color: #fff!important;
 }
+
+.page-banner-area {
+    padding-bottom: 50px!important;
+    padding-top: 50px!important;
+}
