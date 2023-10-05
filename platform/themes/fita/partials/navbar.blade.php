@@ -26,7 +26,7 @@
         <div class="container">
             <div class="mobile-responsive-menu">
                 <div class="logo">
-                    <a href="index-3.html">
+                    <a href="{{ route('public.single') }}">
                         <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                         <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
                         <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
@@ -39,7 +39,7 @@
     <div class="desktop-nav">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index-3.html">
+                <a class="navbar-brand" href="{{ route('public.single') }}">
                     <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">

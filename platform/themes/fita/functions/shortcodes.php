@@ -15,6 +15,10 @@ app()->booted(function () {
     add_shortcode('custom-contact-form', 'Custom Contact form', 'Custom contact form', function () {
         return Theme::partial('short-codes.custom-contact-form');
     });
+
+    add_shortcode('latest-new', 'Latest New', 'Latest New', function ($shortCode) {
+        return Theme::partial('short-codes.latest-new');
+    });
 });
 
 
