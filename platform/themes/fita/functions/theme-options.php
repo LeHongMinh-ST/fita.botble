@@ -1,6 +1,8 @@
 <?php
 
 app()->booted(function () {
+
+
     theme_option()
         ->setField([
             'id'         => 'copyright',
@@ -36,6 +38,20 @@ app()->booted(function () {
             'attributes' => [
                 'name'  => 'primary_color',
                 'value' => '#ff2b4a',
+            ],
+        ])->setField([
+            'id'         => 'news_url',
+            'section_id' => 'opt-text-subsection-page',
+            'type'       => 'text',
+            'label'      => __('News page url'),
+            'attributes' => [
+                'name'    => 'news_url',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'placeholder'  => __('Change news page url'),
+                    'data-counter' => 250,
+                ],
             ],
         ]);
 });

@@ -15,8 +15,10 @@
             <div class="col-lg-8">
                 <div class="news-details">
                     <div class="news-simple-card">
-                        <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage()) }}"
-                             alt="{{ $post->name }}">
+                        @if($post->image)
+                            <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage()) }}"
+                                 alt="{{ $post->name }}">
+                        @endif
                         <div class="list">
                             <ul>
                                 <ul>
