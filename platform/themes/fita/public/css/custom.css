@@ -37,3 +37,8 @@
     padding-bottom: 50px!important;
     padding-top: 50px!important;
 }
+
+.slider-item {
+    max-height: none!important;
+    margin: 0!important;
+}
