@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="paginations">
-                            {{ $posts->links() }}
+                            {{ $posts->withQueryString()->links() }}
                         </div>
                     @else
                         <div class="alert alert-warning">
