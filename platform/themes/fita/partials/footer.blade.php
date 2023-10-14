@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-6 col-md-8">
                     <div class="copy">
-                        <p>© Sanu is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                        <p>{!! BaseHelper::clean(theme_option('copyright')) !!}</a>
                         </p>
                     </div>
                 </div>

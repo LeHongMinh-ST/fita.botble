@@ -37,6 +37,7 @@ MAIL_ENCRYPTION=tls
 3. Run
 ``` bash
 -Run: composer install
+-Run: npm install
 - Using sample data:
 	Option 1: Import database from database.sql.
 	Option 2: Run php artisan migrate --seed
