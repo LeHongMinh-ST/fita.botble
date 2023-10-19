@@ -5,15 +5,16 @@
                 <div class="footer-logo-area">
                     <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                    <p>Sanu University was established by J.H Merthon in 1810 for the public benefit. Afterwards, it is
-                        recognized globally</p>
+                    <p>{{ theme_option('footer_description') }}</p>
                     <div class="contact-list">
                         <ul>
-                            <li><a href="tel:+01987655567685">+01-9876-5556-7685
+                            <li><a href="javascript:void(0)">{{ theme_option('address') }}
+                                </a></li>
+                            <li><a href="tel:{{ theme_option('phone_number') }}">{{ theme_option('phone_number') }}
                                 </a></li>
                             <li>
-                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#badbded7d3d4fac9dbd4cf94dfdecf"><span
-                                        class="__cf_email__" data-cfemail="94f5f0f9fdfad4e7f5fae1baf1f0e1">[email&#160;protected]</span></a>
+                                <a href="{{ theme_option('email') }}"><span
+                                        class="__cf_email__">{{ theme_option('email') }}</span></a>
                             </li>
                         </ul>
                     </div>

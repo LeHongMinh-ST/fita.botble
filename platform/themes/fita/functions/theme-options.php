@@ -53,5 +53,59 @@ app()->booted(function () {
                     'data-counter' => 250,
                 ],
             ],
+        ])->setField([
+            'id'         => 'footer_description',
+            'section_id' => 'opt-text-subsection-general',
+            'type'       => 'textarea',
+            'label'      => __('Footer Description'),
+            'attributes' => [
+                'name'    => 'footer_description',
+                'value'   => '',
+                'options' => [
+                    'class' => 'form-control',
+                    'rows'  => 4,
+                ],
+            ],
+        ])->setField([
+            'id'         => 'email',
+            'section_id' => 'opt-text-subsection-general',
+            'type'       => 'text',
+            'label'      => __('Email'),
+            'attributes' => [
+                'name'    => 'email',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'placeholder'  => __('Change email'),
+                    'data-counter' => 250,
+                ],
+            ],
+        ])->setField([
+            'id'         => 'phone_number',
+            'section_id' => 'opt-text-subsection-general',
+            'type'       => 'text',
+            'label'      => __('Phone number'),
+            'attributes' => [
+                'name'    => 'phone_number',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'placeholder'  => __('Change phone number'),
+                    'data-counter' => 250,
+                ],
+            ],
+        ])->setField([
+            'id'         => 'address',
+            'section_id' => 'opt-text-subsection-general',
+            'type'       => 'textarea',
+            'label'      => __('Address'),
+            'attributes' => [
+                'name'    => 'address',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'rows'  => 4,
+                ],
+            ],
         ]);
 });
