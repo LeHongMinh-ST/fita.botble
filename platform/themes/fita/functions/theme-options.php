@@ -40,26 +40,12 @@ app()->booted(function () {
                 'value' => '#ff2b4a',
             ],
         ])->setField([
-            'id'         => 'news_url',
-            'section_id' => 'opt-text-subsection-page',
-            'type'       => 'text',
-            'label'      => __('News page url'),
-            'attributes' => [
-                'name'    => 'news_url',
-                'value'   => '',
-                'options' => [
-                    'class'        => 'form-control',
-                    'placeholder'  => __('Change news page url'),
-                    'data-counter' => 250,
-                ],
-            ],
-        ])->setField([
-            'id'         => 'footer_description',
+            'id'         => 'short_description',
             'section_id' => 'opt-text-subsection-general',
             'type'       => 'textarea',
-            'label'      => __('Footer Description'),
+            'label'      => __('Short Description'),
             'attributes' => [
-                'name'    => 'footer_description',
+                'name'    => 'short_description',
                 'value'   => '',
                 'options' => [
                     'class' => 'form-control',
