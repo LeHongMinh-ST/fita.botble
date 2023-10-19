@@ -8,22 +8,21 @@
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
                 </a>
                 <div class="sidebar-content">
-                    <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua.</p>
+                    <h3>{{__('About Us')}}</h3>
+                    <p>{{ theme_option('short_description') }}</p>
                     <div class="sidebar-btn">
-                        <a href="contact.html" class="default-btn">Let’s Talk</a>
+                        <a href="contact.html" class="default-btn">{{ __('Contract Us') }}</a>
                     </div>
                 </div>
                 <div class="sidebar-contact-info">
                     <h3>Contact Information</h3>
                     <ul class="info-list">
-                        <li><i class="ri-phone-fill"></i> <a href="tel:9901234567">+990-123-4567</a></li>
+                        <li><i class="ri-phone-fill"></i> <a href="tel:{{ theme_option('phone_number') }}">{{ theme_option('phone_number') }}</a></li>
                         <li><i class="ri-mail-line"></i><a
-                                href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#a4ccc1c8c8cbe4d7c5cad18ac7cbc9"><span
-                                    class="__cf_email__" data-cfemail="462e232a2a2906352728336825292b">[email&#160;protected]</span></a>
+                                href="{{ theme_option('email') }}"><span
+                                    class="__cf_email__" >{{ theme_option('email') }}</span></a>
                         </li>
-                        <li><i class="ri-map-pin-line"></i> 413 North Las Vegas, NV 89032</li>
+                        <li><i class="ri-map-pin-line"></i> {{ theme_option('address') }}</li>
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">

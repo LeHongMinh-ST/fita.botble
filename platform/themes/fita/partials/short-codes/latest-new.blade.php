@@ -35,8 +35,8 @@
 
             </div>
             <div class="more-latest-news text-center">
-                @if(theme_option('news_url'))
-                    <p><a href="{{theme_option('news_url')}}" class="read-more-btn active"> {{ __('More on News') }}<i class="flaticon-next"></i></a></p>
+                @if(clean($shortcode->{'link_all_new'}))
+                    <p><a href="{{$shortcode->{'link_all_new'} }}" class="read-more-btn active"> {{ __('More on News') }}<i class="flaticon-next"></i></a></p>
                 @endif
             </div>
         </div>

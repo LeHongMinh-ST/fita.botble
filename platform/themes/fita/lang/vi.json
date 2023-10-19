@@ -13,6 +13,7 @@
     "Oh no": "Ôi không",
     "Please try again in a few minutes, or alternatively return to the homepage by <a href=\":link\">clicking here</a>.": "Vui lòng thử lại trong vài phút, hoặc trở lại trang chủ bằng cách <a href=\":link\">nhấp vào đây</a>.",
     "Read More": "Đọc thêm",
+    "Read more": "Đọc thêm",
     "Latest News": "Tin tức mới nhất",
     "Recent Posts": "Bài đăng gần đây",
     "Right sidebar": "Thanh bên phải",
@@ -33,5 +34,15 @@
     "News page url": "Đường dẫn trang tin tức",
     "Select From Hundreds of Options": "Chọn từ hàng trăm tùy chọn",
     "More on News": "Đọc thêm Tin tức",
-    "Change news page url": "Thay đổi đường dẫn trang tin tức"
+    "Change news page url": "Thay đổi đường dẫn trang tin tức",
+    "Footer Description": "Mô tả chân trang",
+    "Phone number": "Số điện thoại",
+    "Address": "Địa chỉ",
+    "Learn more": "Tìm hiểu thêm",
+    "Short Description": "Mô tả ngắn",
+    "Month": "Tháng",
+    "Event": "Sự kiện",
+    "Footer sidebar": "Thanh bên chân trang",
+    "About Us": "Về chúng tôi",
+    "Contact Us": "Liên hệ"
 }

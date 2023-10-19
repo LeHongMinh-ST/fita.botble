@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="header-left-content">
-                    <p>Get the latest updates and Sanu's response to COVID-19</p>
+                    <p>{{ SeoHelper::getTitle() }}</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
