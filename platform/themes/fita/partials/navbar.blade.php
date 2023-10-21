@@ -17,7 +17,7 @@
                         !!}
                         <ul>
                             <li>
-{{--                                {!! apply_filters('language_switcher') !!}--}}
+                                {{--                                {!! apply_filters('language_switcher') !!}--}}
                                 {!! Theme::partial('language-switcher') !!}
                             </li>
                         </ul>
@@ -34,8 +34,20 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('public.single') }}">
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo" alt="white-logo">
+                        @if(theme_option('logo'))
+                            <img
+                                src="{{  RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                                class="main-logo fita-main-logo" alt="logo">
+                            <img
+                                src="{{ RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                                class=" fita-main-logo white-logo" alt="white-logo">
+                        @else
+                            <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                                 alt="logo">
+                            <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                                 alt="white-logo">
+                        @endif
+
                     </a>
                 </div>
             </div>
@@ -45,9 +57,20 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('public.single') }}">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="fita-main-logo white-logo" alt="white-logo">
-                    <span class="text-logo">FITA</span>
+                    @if(theme_option('logo'))
+                        <img
+                            src="{{  RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                            class="main-logo fita-main-logo" alt="logo">
+                        <img
+                            src="{{ RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                            class=" fita-main-logo white-logo" alt="white-logo">
+                    @else
+                        <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                             alt="logo">
+                        <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                             alt="white-logo">
+                    @endif
+                    <span class="text-logo">{{theme_option('logo-text')}}</span>
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     {!!

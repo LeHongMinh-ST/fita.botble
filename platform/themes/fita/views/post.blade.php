@@ -50,7 +50,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="share">
                                     <ul>
-                                        <li><span>Share :</span></li>
+                                        <li><span>{{__('Share')}} :</span></li>
                                         <li>
                                             <a href="{{ Request::url() }}" target="_blank"><i class="flaticon-facebook"></i></a>
                                         </li>

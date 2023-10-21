@@ -170,5 +170,19 @@ app()->booted(function () {
                     'rows'  => 4,
                 ],
             ],
+        ])->setField([
+            'id'         => 'logo-text',
+            'type'       => 'text',
+            'section_id' => 'opt-text-subsection-logo',
+            'label'      => __('Logo Text'),
+            'attributes' => [
+                'name'  => 'logo-text',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'placeholder'  => __('Change logo text'),
+                    'data-counter' => 250,
+                ],
+            ],
         ]);
 });
