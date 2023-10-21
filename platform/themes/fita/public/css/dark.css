@@ -95,7 +95,7 @@ Default CSS
   background-color: #000000;
 }
 .theme-dark .navbar-area .navbar-brand .white-logo {
-  display: block;
+  display: inline-block;
 }
 .theme-dark .navbar-area .navbar-brand .main-logo {
   display: none;

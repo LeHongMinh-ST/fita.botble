@@ -11,11 +11,11 @@
                     <h3>{{__('About Us')}}</h3>
                     <p>{{ theme_option('short_description') }}</p>
                     <div class="sidebar-btn">
-                        <a href="/lien-he" class="default-btn">{{ __('Contract Us') }}</a>
+                        <a href="/lien-he" class="default-btn">{{ __('Contact Us') }}</a>
                     </div>
                 </div>
                 <div class="sidebar-contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>{{__('Contact Information')}}</h3>
                     <ul class="info-list">
                         <li><i class="ri-phone-fill"></i> <a href="tel:{{ theme_option('phone_number') }}">{{ theme_option('phone_number') }}</a></li>
                         <li><i class="ri-mail-line"></i><a

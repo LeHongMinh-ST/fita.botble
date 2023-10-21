@@ -25,3 +25,4 @@ Form::component('themeIcon', Theme::getThemeNamespace() . '::partials.forms.fiel
 ]);
 
 RvMedia::setUploadPathAndURLToPublic();
+Menu::addMenuLocation('header-menu', __('Header menu'));

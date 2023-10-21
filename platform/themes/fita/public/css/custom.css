@@ -1,5 +1,5 @@
 .fita-main-logo {
-    width: 50px;
+    width: 60px;
 }
 
 .paginations ul li span {
@@ -14,6 +14,14 @@
     color: #022b4a;
     font-size: 18px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
+}
+
+.text-logo {
+    font-size: 29px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    color: #2F76A6;
+    font-family: "source serif pro", serif;
 }
 
 

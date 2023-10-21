@@ -3,15 +3,22 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="header-left-content">
-                    <p>Fita - Khoa công nghệ thông tin - Học viện nông nghiệp Việt Nam</p>
+                    <p>{!! theme_option('notice') !!}</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="header-right-content">
-                    <div class="list">
+                    <div class="list d-lg-flex justify-content-lg-end gap-3">
+                        {!!
+                            Menu::renderMenuLocation('header-menu', [
+                                'options' => [],
+                                'theme'   => true,
+                            ])
+                        !!}
                         <ul>
                             <li>
-                                {!! apply_filters('language_switcher') !!}
+{{--                                {!! apply_filters('language_switcher') !!}--}}
+                                {!! Theme::partial('language-switcher') !!}
                             </li>
                         </ul>
                     </div>
@@ -40,6 +47,7 @@
                 <a class="navbar-brand" href="{{ route('public.single') }}">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="fita-main-logo white-logo" alt="white-logo">
+                    <span class="text-logo">FITA</span>
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     {!!

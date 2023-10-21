@@ -156,5 +156,19 @@ app()->booted(function () {
                     'rows'  => 4,
                 ],
             ],
+        ])
+        ->setField([
+            'id'         => 'notice',
+            'section_id' => 'opt-text-subsection-general',
+            'type'       => 'textarea',
+            'label'      => __('Notice'),
+            'attributes' => [
+                'name'    => 'notice',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'rows'  => 4,
+                ],
+            ],
         ]);
 });
