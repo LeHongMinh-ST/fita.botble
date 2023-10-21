@@ -3,7 +3,7 @@
     @php
         $posts = get_recent_posts(3);
     @endphp
-    <div class="lates-news-area pt-100 pb-70 bg-f4f6f9">
+    <div class="lates-news-area pt-100 pb-70 ">
         <div class="container">
             <div class="section-title">
                 <h2>{{__('Latest News')}}</h2>

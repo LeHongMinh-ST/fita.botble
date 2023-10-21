@@ -2,7 +2,7 @@
     $posts = get_posts_by_category($shortcode->{'category_id'}, 5);
 @endphp
 
-<div class="events-area ptb-100">
+<div class="events-area ptb-100 bg-f4f6f9">
     <div class="container">
         <div class="section-title">
             <h2>{{ __('Event') }}</h2>

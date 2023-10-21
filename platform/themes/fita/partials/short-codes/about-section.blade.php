@@ -1,4 +1,4 @@
-<div class="campus-information-area pb-70">
+<div class="campus-information-area pb-70 bg-f4f6f9">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
