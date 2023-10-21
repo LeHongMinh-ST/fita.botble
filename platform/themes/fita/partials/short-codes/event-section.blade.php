@@ -18,7 +18,7 @@
                         </a>
                     </div>
                     <div class="events-content">
-                        <a href="events-details.html"><h3>{{ $post->name }}</h3></a>
+                        <a href="{{ $post->url }}"><h3>{{ $post->name }}</h3></a>
                         <p>{{ $post->description }}</p>
                         <div class="date-and-read-more">
                             <ul class="d-flex justify-content-between">
