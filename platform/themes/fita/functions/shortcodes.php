@@ -38,6 +38,10 @@ app()->booted(function () {
         return Theme::partial('short-codes.about-section', compact('shortcode'));
     });
 
+    shortcode()->setAdminConfig('about-section', function ($attributes) {
+        return Theme::partial('short-codes.about-section-admin-config', compact('attributes'));
+    });
+
     add_shortcode('event-section', __('Event Section'), __('Event Section'), function ($shortcode) {
         return Theme::partial('short-codes.event-section', compact('shortcode'));
     });
