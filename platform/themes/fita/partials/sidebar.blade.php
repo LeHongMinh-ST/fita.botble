@@ -4,8 +4,8 @@
             <button type="button" class="close" data-bs-dismiss="modal"><i class="ri-close-line"></i></button>
             <div class="modal-body">
                 <a href="index.html">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
+                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="fita-main-logo white-logo" alt="white-logo">
                 </a>
                 <div class="sidebar-content">
                     <h3>{{__('About Us')}}</h3>

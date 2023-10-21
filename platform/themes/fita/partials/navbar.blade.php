@@ -27,10 +27,8 @@
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('public.single') }}">
-                        <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                         <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                        <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
+                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo" alt="white-logo">
                     </a>
                 </div>
             </div>
@@ -40,10 +38,8 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('public.single') }}">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
                     <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
+                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="fita-main-logo white-logo" alt="white-logo">
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     {!!
