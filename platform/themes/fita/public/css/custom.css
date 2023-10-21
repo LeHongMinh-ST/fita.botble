@@ -11,7 +11,7 @@
     border: 1px solid #eee;
     display: inline-block;
     transition: all ease .5s;
-    color: #111d5e;
+    color: #022b4a;
     font-size: 18px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
 }
@@ -22,9 +22,9 @@
 }
 
 .paginations ul li.active span{
-    background-color: #2870a2;
+    background-color: #006938;
     color: #fff;
-    border: 1px solid #2870a2
+    border: 1px solid #006938
 }
 .language_bar_list li a img {
     margin-top: 3px;
