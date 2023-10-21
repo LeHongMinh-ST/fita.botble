@@ -11,7 +11,7 @@
                     <h3>{{__('About Us')}}</h3>
                     <p>{{ theme_option('short_description') }}</p>
                     <div class="sidebar-btn">
-                        <a href="contact.html" class="default-btn">{{ __('Contract Us') }}</a>
+                        <a href="/lien-he" class="default-btn">{{ __('Contract Us') }}</a>
                     </div>
                 </div>
                 <div class="sidebar-contact-info">
@@ -26,18 +26,13 @@
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/?lang=en" target="_blank"><i class="flaticon-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/?lang=en" target="_blank"><i class="flaticon-instagram"></i></a>
-                    </li>
+                    @if (theme_option('social_links'))
+                        @foreach(json_decode(theme_option('social_links'), true) as $socialLink)
+                            <li>
+                                <a href="{{$socialLink[2]['value']}}" target="_blank"><i class="{{$socialLink[1]['value']}}"></i></a>
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
         </div>

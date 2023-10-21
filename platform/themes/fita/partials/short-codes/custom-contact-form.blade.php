@@ -108,18 +108,13 @@
             <div class="social-media">
                 <h3>{{__('Social Media')}}</h3>
                 <ul>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="flaticon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/?lang=en" target="_blank"><i class="flaticon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/?lang=en" target="_blank"><i class="flaticon-linkedin"></i></a>
-                    </li>
+                    @if (theme_option('social_links'))
+                        @foreach(json_decode(theme_option('social_links'), true) as $socialLink)
+                            <li>
+                                <a href="{{$socialLink[2]['value']}}" target="_blank"><i class="{{$socialLink[1]['value']}}"></i></a>
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
         </div>

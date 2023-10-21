@@ -15,7 +15,7 @@
 <!-- Fonts-->
 <link href="https://fonts.googleapis.com/css?family={{ urlencode(theme_option('primary_font', 'Roboto')) }}" rel="stylesheet" type="text/css">
 <!-- CSS Library-->
-
+<link media="all" type="text/css" rel="stylesheet" href="{{ Theme::asset()->url('css/vendors/fontawesome-all.min.css') }}">
 <style>
     :root {
         --primary-color: {{ theme_option('primary_color', '#ff2b4a') }};

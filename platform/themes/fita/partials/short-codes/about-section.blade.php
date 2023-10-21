@@ -18,15 +18,12 @@
                                 <ul>
                                     <li>
                                         <i class="ri-check-fill"></i>
-                                        <p>Graduate Programs</p>
+                                        <p>{{__('Graduate Programs')}}</p>
                                     </li>
+
                                     <li>
                                         <i class="ri-check-fill"></i>
-                                        <p>Doctoral Degrees</p>
-                                    </li>
-                                    <li>
-                                        <i class="ri-check-fill"></i>
-                                        <p>Alumni &amp; Giving</p>
+                                        <p>{{__('Alumni & Giving')}}</p>
                                     </li>
                                 </ul>
                             </div>
@@ -34,15 +31,15 @@
                                 <ul>
                                     <li>
                                         <i class="ri-check-fill"></i>
-                                        <p>Undergraduate</p>
+                                        <p>{{__('Undergraduate')}}</p>
                                     </li>
                                     <li>
                                         <i class="ri-check-fill"></i>
-                                        <p>International Hubs</p>
+                                        <p>{{__('Undergraduate')}}</p>
                                     </li>
                                     <li>
                                         <i class="ri-check-fill"></i>
-                                        <p>Global Students</p>
+                                        <p>{{__('Global Students')}}</p>
                                     </li>
                                 </ul>
                             </div>
