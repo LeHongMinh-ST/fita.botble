@@ -305,7 +305,7 @@ textarea {
     font-size: 18px;
     line-height: 0;
     position: relative;
-    top: 4px
+    /*top: 4px*/
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item:last-child a {
@@ -933,7 +933,7 @@ textarea {
     display: inline-block;
     height: 35px;
     width: 35px;
-    line-height: 40px;
+    line-height: 35px;
     font-size: 16px;
     background: #2870a2;
     text-align: center;
@@ -4816,7 +4816,7 @@ textarea {
 }
 
 .page-banner-area.bg-1 {
-    background-image: url(../images/page-banner/page-bnner-1.jpg)
+    background-image: url(../images/page-banner/page-bnner-2.jpg)
 }
 
 .page-banner-area.bg-2 {

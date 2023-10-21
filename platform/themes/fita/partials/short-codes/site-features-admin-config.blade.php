@@ -21,7 +21,7 @@
     <div class="form-group">
         <label class="control-label">{{ __('Description :number', ['number' => $i]) }}</label>
         <textarea name="description{{ $i }}"  class="form-control"
-                  placeholder="{{ __('Description :number', ['number' => $i]) }}" rows="4">{{ Arr::get($attributes, 'subtitle' . $i) }}</textarea>
+                  placeholder="{{ __('Description :number', ['number' => $i]) }}" rows="4">{{ Arr::get($attributes, 'description' . $i) }}</textarea>
     </div>
 
     <div class="form-group">

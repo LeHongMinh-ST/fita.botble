@@ -38,6 +38,10 @@ app()->booted(function () {
         return Theme::partial('short-codes.about-section', compact('shortcode'));
     });
 
+    shortcode()->setAdminConfig('about-section', function ($attributes) {
+        return Theme::partial('short-codes.about-section-admin-config', compact('attributes'));
+    });
+
     add_shortcode('event-section', __('Event Section'), __('Event Section'), function ($shortcode) {
         return Theme::partial('short-codes.event-section', compact('shortcode'));
     });
@@ -52,7 +56,9 @@ app()->booted(function () {
     add_shortcode('video-section', __('Video Section'), __('Video Section'), function ($shortcode) {
         return Theme::partial('short-codes.video-section', compact('shortcode'));
     });
-
+    shortcode()->setAdminConfig('video-section', function ($attributes) {
+        return Theme::partial('short-codes.video-section-admin-config', compact('attributes'));
+    });
 
 });
 

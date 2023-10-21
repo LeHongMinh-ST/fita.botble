@@ -59,5 +59,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape">
+            <img src="{{ Theme::asset()->url('images/shape-1.png') }}" alt="Image">
+        </div>
     </div>
 </div>

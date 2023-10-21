@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="header-left-content">
-                    <p>{{ SeoHelper::getTitle() }}</p>
+                    <p>Fita - Khoa công nghệ thông tin - Học viện nông nghiệp Việt Nam</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">

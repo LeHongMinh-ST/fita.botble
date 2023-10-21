@@ -8,20 +8,16 @@
                 <div class="col-lg-6 col-md-4">
                     <div class="social-content">
                         <ul>
-                            <li><span>Follow Us On</span></li>
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/?lang=en" target="_blank"><i
-                                        class="ri-instagram-line"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://linkedin.com/?lang=en" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                            </li>
+
+                            @if (theme_option('social_links'))
+                                <li><span>{{__('Follow Us On')}}:</span></li>
+
+                                @foreach(json_decode(theme_option('social_links'), true) as $socialLink)
+                                    <li>
+                                        <a href="{{$socialLink[2]['value']}}" target="_blank"><i class="{{$socialLink[1]['value']}}"></i></a>
+                                    </li>
+                                @endforeach
+                            @endif
                         </ul>
                     </div>
                 </div>
