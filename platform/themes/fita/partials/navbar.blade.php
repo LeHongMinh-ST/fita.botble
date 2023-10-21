@@ -70,6 +70,8 @@
                         <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
                              alt="white-logo">
                     @endif
+                </a>
+                <a href="{{theme_option('logo-text-link')}}">
                     <span class="text-logo">{{theme_option('logo-text')}}</span>
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

@@ -184,5 +184,19 @@ app()->booted(function () {
                     'data-counter' => 250,
                 ],
             ],
+        ])->setField([
+            'id'         => 'logo-text-link',
+            'type'       => 'text',
+            'section_id' => 'opt-text-subsection-logo',
+            'label'      => __('Logo Text link'),
+            'attributes' => [
+                'name'  => 'logo-text-link',
+                'value'   => '',
+                'options' => [
+                    'class'        => 'form-control',
+                    'placeholder'  => __('Change logo text link'),
+                    'data-counter' => 250,
+                ],
+            ],
         ]);
 });
