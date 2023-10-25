@@ -3,10 +3,12 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6">
                 <div class="footer-logo-area">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo"
-                         alt="logo">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
-                         alt="logo">
+                    <div>
+                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                             alt="logo">
+                        <span class="text-logo">{{ theme_option('logo-text')}}</span>
+                    </div>
+
                     <p>{{ theme_option('short_description') }}</p>
                     <div class="contact-list">
                         <ul>

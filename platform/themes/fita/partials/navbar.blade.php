@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="navbar-area nav-bg-2">
+<div class="navbar-area nav-bg-1">
     <div class="mobile-responsive-nav">
         <div class="container">
             <div class="mobile-responsive-menu">
@@ -48,6 +48,9 @@
                                  alt="white-logo">
                         @endif
 
+                    </a>
+                    <a href="{{theme_option('logo-text-link')}}">
+                        <span class="text-logo text-logo-mb">{{theme_option('logo-text')}}</span>
                     </a>
                 </div>
             </div>

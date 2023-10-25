@@ -11,7 +11,7 @@
     border: 1px solid #eee;
     display: inline-block;
     transition: all ease .5s;
-    color: #022b4a;
+    color: #1f2c75;
     font-size: 18px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
 }
@@ -20,8 +20,12 @@
     font-size: 29px;
     font-weight: 700;
     /* margin-bottom: 10px; */
-    color: #006938;
+    color: #ffffff;
     font-family: "source serif pro", serif;
+}
+
+.text-logo-mb {
+    color: #e32845;
 }
 
 
@@ -30,9 +34,9 @@
 }
 
 .paginations ul li.active span{
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 .language_bar_list li a img {
     margin-top: 3px;

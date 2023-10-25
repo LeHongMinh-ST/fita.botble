@@ -83,7 +83,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #022b4a;
+    color: #1f2c75;
     font-family: "source serif pro", serif;
     font-weight: 700
 }
@@ -118,7 +118,7 @@ a {
 }
 
 .form-control:focus {
-    border: 1px solid #006938;
+    border: 1px solid #e32845;
     box-shadow: none
 }
 
@@ -131,7 +131,7 @@ textarea {
 }
 
 .top-header-area {
-    background-color: #006938;
+    background-color: #e32845;
     padding-top: 15px;
     padding-bottom: 15px
 }
@@ -193,7 +193,7 @@ textarea {
 }
 
 .buy-now-btn:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
@@ -223,15 +223,15 @@ textarea {
 }
 
 .navbar-area.nav-bg-2 .desktop-nav .navbar-nav .nav-item a {
-    color: #022b4a
+    color: #1f2c75
 }
 
 .navbar-area.nav-bg-2 .desktop-nav .others-options .icon {
-    color: #022b4a
+    color: #1f2c75
 }
 
 .nav-bg-1 {
-    background-color: #022b4a
+    background-color: #1f2c75
 }
 
 .nav-bg-2 {
@@ -298,7 +298,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item a:hover, .desktop-nav .navbar .navbar-nav .nav-item a:focus, .desktop-nav .navbar .navbar-nav .nav-item a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item a i {
@@ -317,7 +317,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item:hover a, .desktop-nav .navbar .navbar-nav .nav-item:focus a, .desktop-nav .navbar .navbar-nav .nav-item.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -368,7 +368,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
@@ -403,7 +403,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -419,7 +419,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -435,7 +435,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -451,7 +451,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -467,7 +467,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
@@ -497,7 +497,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -507,7 +507,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -517,7 +517,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -527,7 +527,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
@@ -537,7 +537,7 @@ textarea {
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-    color: #006938
+    color: #e32845
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
@@ -593,14 +593,14 @@ textarea {
     width: 40px;
     line-height: 40px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     font-size: 20px;
     text-align: center
 }
 
 .others-option-for-responsive .dot-menu:hover .inner .circle {
-    background-color: #006938
+    background-color: #e32845
 }
 
 .others-option-for-responsive .container {
@@ -656,7 +656,7 @@ textarea {
 .others-option-for-responsive .others-options ul li .call-now i {
     position: absolute;
     font-size: 40px;
-    color: #006938;
+    color: #e32845;
     left: 0;
     top: 3px
 }
@@ -666,7 +666,7 @@ textarea {
 }
 
 .others-option-for-responsive .others-options ul li .call-now a {
-    color: #022b4a;
+    color: #1f2c75;
     font-weight: 500
 }
 
@@ -692,7 +692,7 @@ textarea {
 .preloader-area {
     position: fixed;
     z-index: 999999;
-    background-color: #006938;
+    background-color: #e32845;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -823,7 +823,7 @@ textarea {
     height: 30px;
     width: 30px;
     line-height: 30px;
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     font-size: 20px;
     transition: all ease .5s;
@@ -831,7 +831,7 @@ textarea {
 }
 
 .modal.right .modal-content button.close i:hover {
-    background-color: #022b4a
+    background-color: #1f2c75
 }
 
 .modal.right.fade .modal-dialog {
@@ -903,14 +903,14 @@ textarea {
 }
 
 .sidebarModal.modal .modal-body .sidebar-contact-info .info-list li a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .sidebarModal.modal .modal-body .sidebar-contact-info .info-list li i {
     position: absolute;
     left: 0;
     top: 2px;
-    color: #006938
+    color: #e32845
 }
 
 .sidebarModal.modal .modal-body .sidebar-social-list {
@@ -935,7 +935,7 @@ textarea {
     width: 35px;
     line-height: 35px;
     font-size: 16px;
-    background: #006938;
+    background: #e32845;
     text-align: center;
     color: #fff;
     border-radius: 50%;
@@ -944,7 +944,7 @@ textarea {
 
 .sidebarModal.modal .modal-body .sidebar-social-list li i:hover {
     transform: translateY(-5px);
-    background-color: #022b4a;
+    background-color: #1f2c75;
     color: #fff
 }
 
@@ -980,14 +980,14 @@ textarea {
 }
 
 .default-btn {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     font-size: 16px;
     padding: 13px 35px;
     border-radius: 0;
     position: relative;
     transition: all ease .5s;
-    border: 1px solid #006938;
+    border: 1px solid #e32845;
     z-index: 1
 }
 
@@ -1000,7 +1000,7 @@ textarea {
 .default-btn::before {
     position: absolute;
     content: "";
-    background-color: #022b4a;
+    background-color: #1f2c75;
     height: 100%;
     width: 100%;
     border-radius: 30px;
@@ -1024,7 +1024,7 @@ textarea {
 }
 
 .read-more-btn {
-    color: #022b4a;
+    color: #1f2c75;
     font-weight: 500;
     font-size: 15px;
     transition: all ease .5s;
@@ -1038,11 +1038,11 @@ textarea {
 }
 
 .read-more-btn:hover {
-    color: #006938
+    color: #e32845
 }
 
 .read-more-btn.active {
-    color: #006938;
+    color: #e32845;
     letter-spacing: 0
 }
 
@@ -1051,7 +1051,7 @@ textarea {
 }
 
 .read-more-btn.white-color:hover {
-    color: #006938
+    color: #e32845
 }
 
 .section-title {
@@ -1098,7 +1098,7 @@ textarea {
 }
 
 .banner-area {
-    background-color: #022b4a;
+    background-color: #1f2c75;
     overflow: hidden
 }
 
@@ -1176,7 +1176,7 @@ textarea {
 }
 
 .slider-content.style2 h1 {
-    color: #022b4a
+    color: #1f2c75
 }
 
 .slider-content.style2 p {
@@ -1300,9 +1300,9 @@ textarea {
 }
 
 .hero-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .hero-slider2 .slider-item {
@@ -1347,9 +1347,9 @@ textarea {
 }
 
 .hero-slider2.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .hero-slider2:hover.owl-theme .owl-nav [class*=owl-] {
@@ -1361,7 +1361,7 @@ textarea {
 }
 
 .hero-slider2.style2.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938
+    background-color: #e32845
 }
 
 .owl-thumbs {
@@ -1445,13 +1445,13 @@ textarea {
 }
 
 .single-academics-card .academic-top-content h3:hover {
-    color: #006938
+    color: #e32845
 }
 
 .single-academics-card .academic-top-content i {
     font-size: 30px;
     position: absolute;
-    color: #006938;
+    color: #e32845;
     left: 0;
     top: 50%;
     transform: translateY(-50%)
@@ -1475,7 +1475,7 @@ textarea {
     content: "";
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to bottom, transparent, #022b4ac9);
+    background-image: linear-gradient(to bottom, transparent, #1f2c75c9);
     left: 0;
     top: 0
 }
@@ -1523,11 +1523,11 @@ textarea {
 }
 
 .single-academics-card2 .academic-content .academic-top-content h3:hover {
-    color: #006938
+    color: #e32845
 }
 
 .single-academics-card2 .academic-content .academic-top-content i {
-    color: #006938;
+    color: #e32845;
     font-size: 20px;
     position: absolute;
     left: 0
@@ -1554,7 +1554,7 @@ textarea {
     width: 0;
     top: 0;
     right: 0;
-    background-color: #006938;
+    background-color: #e32845;
     transition: all ease .5s
 }
 
@@ -1568,9 +1568,9 @@ textarea {
     width: 65px;
     line-height: 72px;
     border-radius: 100%;
-    border: 1px solid #006938;
+    border: 1px solid #e32845;
     display: inline-block;
-    color: #006938;
+    color: #e32845;
     position: relative;
     transition: all ease .5s
 }
@@ -1633,7 +1633,7 @@ textarea {
 }
 
 .serch-content .form-group .form-control:focus {
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .serch-content .form-group .src-btn {
@@ -1662,7 +1662,7 @@ textarea {
 }
 
 .category-content .form-control:focus {
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .location-type {
@@ -1681,8 +1681,8 @@ textarea {
 }
 
 .location-type .form-check .form-check-input:checked {
-    background-color: #006938;
-    border-color: #006938
+    background-color: #e32845;
+    border-color: #e32845
 }
 
 .location-type .form-check .form-check-input:focus {
@@ -1703,8 +1703,8 @@ textarea {
 }
 
 .program-level .form-check .form-check-input:checked {
-    background-color: #006938;
-    border-color: #006938
+    background-color: #e32845;
+    border-color: #e32845
 }
 
 .program-level .form-check .form-check-input:focus {
@@ -1784,7 +1784,7 @@ textarea {
     height: 10px;
     width: 10px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: -30px;
     top: 5px
 }
@@ -1831,7 +1831,7 @@ textarea {
 }
 
 .academics-list ul li:hover a {
-    color: #006938
+    color: #e32845
 }
 
 .related-download {
@@ -1866,7 +1866,7 @@ textarea {
 .related-download ul li i {
     position: absolute;
     left: 0;
-    background-color: #006938;
+    background-color: #e32845;
     height: 100%;
     top: 0;
     left: 0;
@@ -1923,7 +1923,7 @@ textarea {
 }
 
 .single-education-card .edication-content .read-more-btn:hover {
-    color: #022b4a
+    color: #1f2c75
 }
 
 .single-education-card::before {
@@ -1940,7 +1940,7 @@ textarea {
 .single-education-card::after {
     position: absolute;
     content: "";
-    background: #006938;
+    background: #e32845;
     display: inline-block;
     height: 100%;
     width: 0;
@@ -1989,7 +1989,7 @@ textarea {
 .campus-content .list ul li i {
     position: absolute;
     left: 0;
-    color: #006938
+    color: #e32845
 }
 
 .campus-content.style-2 {
@@ -2011,13 +2011,13 @@ textarea {
 }
 
 .counter-card h1 .target {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 4px
 }
 
 .counter-card h1 .target.heading-color {
-    color: #022b4a;
+    color: #1f2c75;
     font-size: 60px;
     margin-left: -4px
 }
@@ -2050,7 +2050,7 @@ textarea {
 }
 
 .estemate-form .form-group .form-control:focus {
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .estemate-form .default-btn {
@@ -2083,7 +2083,7 @@ textarea {
 }
 
 .single-courses-card .courses-content .admin-profile p a {
-    color: #006938;
+    color: #e32845;
     font-weight: 500
 }
 
@@ -2105,7 +2105,7 @@ textarea {
 }
 
 .single-courses-card .courses-content h3:hover {
-    color: #006938
+    color: #e32845
 }
 
 .single-courses-card .courses-content .bottom-content ul {
@@ -2119,7 +2119,7 @@ textarea {
 }
 
 .single-courses-card .courses-content .bottom-content ul li a {
-    color: #006938
+    color: #e32845
 }
 
 .single-courses-card .courses-content .bottom-content ul li ul li {
@@ -2133,7 +2133,7 @@ textarea {
     position: absolute;
     left: 0;
     top: 0;
-    color: #006938
+    color: #e32845
 }
 
 .single-courses-card.style2 {
@@ -2174,7 +2174,7 @@ textarea {
 }
 
 .single-courses-card.style3 .list-1 ul li i {
-    color: #006938;
+    color: #e32845;
     margin-right: 7px
 }
 
@@ -2253,9 +2253,9 @@ textarea {
 }
 
 .courses-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .courses-slider.owl-theme .owl-dots {
@@ -2263,7 +2263,7 @@ textarea {
 }
 
 .courses-slider.owl-theme .owl-dots .owl-dot span {
-    background-color: #006938;
+    background-color: #e32845;
     margin: 10px 10px 0;
     background-color: #dfdbdb;
     height: 18px;
@@ -2279,7 +2279,7 @@ textarea {
     content: "";
     height: 10px;
     width: 10px;
-    background-color: #006938;
+    background-color: #e32845;
     border-radius: 100%;
     top: 4px;
     left: 4px
@@ -2313,7 +2313,7 @@ textarea {
     border: 1px solid #eee;
     display: inline-block;
     transition: all ease .5s;
-    color: #022b4a;
+    color: #1f2c75;
     font-size: 18px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
 }
@@ -2324,15 +2324,15 @@ textarea {
 }
 
 .paginations ul li a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .paginations ul li a.active {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .courses-details .courses-card {
@@ -2372,16 +2372,16 @@ textarea {
 }
 
 .courses-details .courses-card .list ul li .teacher p a {
-    color: #006938
+    color: #e32845
 }
 
 .courses-details .courses-card .list ul li span {
-    color: #022b4a;
+    color: #1f2c75;
     font-weight: 500
 }
 
 .courses-details .courses-card .list ul li i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 2px;
     padding-right: 7px
@@ -2401,7 +2401,7 @@ textarea {
 }
 
 .description .nav-tabs .nav-link {
-    color: #022b4a;
+    color: #1f2c75;
     padding-bottom: 10px;
     padding: 15px 30px;
     font-weight: 600;
@@ -2411,7 +2411,7 @@ textarea {
 
 .description .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: #006938 !important;
+    background-color: #e32845 !important;
     border-radius: 0;
     border: none;
     background-color: transparent
@@ -2446,7 +2446,7 @@ textarea {
     height: 10px;
     width: 10px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: -30px;
     top: 5px
 }
@@ -2492,7 +2492,7 @@ textarea {
     position: absolute;
     right: 0;
     top: -5px;
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     padding: 5px 10px
 }
@@ -2529,14 +2529,14 @@ textarea {
 }
 
 .instructor .instructor-content .quick-contact ul li i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 2px;
     margin-right: 7px
 }
 
 .instructor .instructor-content .quick-contact ul li a {
-    color: #006938
+    color: #e32845
 }
 
 .instructor .instructor-content .social ul {
@@ -2557,14 +2557,14 @@ textarea {
     border-radius: 7px;
     text-align: center;
     font-size: 18px;
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     display: inline-block;
     transition: all ease .5s
 }
 
 .instructor .instructor-content .social ul li a:hover {
-    background-color: #022b4a;
+    background-color: #1f2c75;
     color: #fff
 }
 
@@ -2651,7 +2651,7 @@ textarea {
 }
 
 .comments .reply:hover {
-    background-color: #006938
+    background-color: #e32845
 }
 
 .comments .reply:hover a {
@@ -2690,7 +2690,7 @@ textarea {
 }
 
 .reply-area .reply-form .form-group .form-control:focus {
-    border-color: #006938
+    border-color: #e32845
 }
 
 .reply-area .reply-form .form-check {
@@ -2702,8 +2702,8 @@ textarea {
 }
 
 .reply-area .reply-form .form-check .form-check-input:checked {
-    background-color: #006938;
-    border-color: #006938
+    background-color: #e32845;
+    border-color: #e32845
 }
 
 .reply-area .reply-form .form-check .form-check-input:focus {
@@ -2742,7 +2742,7 @@ textarea {
 .enroll-courses .enroll-img .icon a {
     font-size: 35px;
     background-color: #fff;
-    color: #006938;
+    color: #e32845;
     text-align: center;
     height: 60px;
     width: 60px;
@@ -2752,7 +2752,7 @@ textarea {
 }
 
 .enroll-courses .enroll-img .icon a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
@@ -2804,7 +2804,7 @@ textarea {
 .enroll-courses .list ul li span {
     position: absolute;
     left: 0;
-    color: #022b4a;
+    color: #1f2c75;
     font-weight: 600
 }
 
@@ -2831,7 +2831,7 @@ textarea {
 }
 
 .single-campus-card .campus-content span {
-    color: #006938;
+    color: #e32845;
     margin-bottom: 15px;
     display: inline-block;
     font-weight: 500
@@ -2845,7 +2845,7 @@ textarea {
 }
 
 .single-campus-card .campus-content h3:hover {
-    color: #006938
+    color: #e32845
 }
 
 .single-campus-card.style2 .campus-content {
@@ -2862,7 +2862,7 @@ textarea {
     content: "";
     height: 1px;
     width: 50px;
-    background-color: #006938;
+    background-color: #e32845;
     left: 0;
     bottom: 5px
 }
@@ -2928,9 +2928,9 @@ textarea {
 }
 
 .campus-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .campus-slider.owl-theme .owl-dots {
@@ -2938,7 +2938,7 @@ textarea {
 }
 
 .campus-slider.owl-theme .owl-dots .owl-dot span {
-    background-color: #006938;
+    background-color: #e32845;
     margin: 10px 10px 0;
     background-color: #bbbaba;
     height: 18px;
@@ -2954,7 +2954,7 @@ textarea {
     content: "";
     height: 10px;
     width: 10px;
-    background-color: #006938;
+    background-color: #e32845;
     border-radius: 100%;
     top: 4px;
     left: 4px
@@ -2995,9 +2995,9 @@ textarea {
 }
 
 .campus-slider2.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .active.center .single-campus-card.style-3 .campus-content {
@@ -3061,7 +3061,7 @@ textarea {
 .admission-right-content .icon a {
     font-size: 35px;
     background-color: #fff;
-    color: #006938;
+    color: #e32845;
     text-align: center;
     height: 60px;
     width: 60px;
@@ -3072,7 +3072,7 @@ textarea {
 }
 
 .admission-right-content .icon a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
@@ -3142,7 +3142,7 @@ textarea {
 
 .admission-content .admission-image .icon a {
     font-size: 35px;
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     text-align: center;
     height: 60px;
@@ -3153,7 +3153,7 @@ textarea {
 }
 
 .admission-content .admission-image .icon a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
@@ -3217,7 +3217,7 @@ textarea {
 
 .how-to-apply .apply-list ul li i {
     position: absolute;
-    color: #006938;
+    color: #e32845;
     left: 0
 }
 
@@ -3283,7 +3283,7 @@ textarea {
 }
 
 .additional-information .list ul li:hover {
-    background-color: #006938
+    background-color: #e32845
 }
 
 .additional-information .list ul li:hover a {
@@ -3305,12 +3305,12 @@ textarea {
 }
 
 .single-program-card .program-content h3 a {
-    color: #022b4a;
+    color: #1f2c75;
     transition: all ease .5s
 }
 
 .single-program-card .program-content h3 a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .single-program-card .program-content p {
@@ -3389,7 +3389,7 @@ textarea {
 }
 
 .single-health-care-card:hover .health-care-content h3 {
-    color: #006938
+    color: #e32845
 }
 
 .more-health-care.style2 {
@@ -3432,9 +3432,9 @@ textarea {
 }
 
 .health-care-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .health-details .top-content img {
@@ -3477,7 +3477,7 @@ textarea {
 }
 
 .madical-care-content .medical-card .content {
-    background-color: #006938;
+    background-color: #e32845;
     text-align: center;
     padding: 20px 0 15px
 }
@@ -3518,7 +3518,7 @@ textarea {
     height: 10px;
     width: 10px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: 0;
     top: 6px
 }
@@ -3577,7 +3577,7 @@ textarea {
 }
 
 .tranding .tranding-box:hover .tranding-content h4 a {
-    color: #006938
+    color: #e32845
 }
 
 .single-events-card {
@@ -3601,7 +3601,7 @@ textarea {
 
 .single-events-card .events-image .date span {
     font-size: 18px;
-    color: #006938;
+    color: #e32845;
     font-weight: 600;
     margin-bottom: 10px
 }
@@ -3621,7 +3621,7 @@ textarea {
 }
 
 .single-events-card .events-content .admin p a i {
-    color: #006938;
+    color: #e32845;
     padding-right: 7px
 }
 
@@ -3636,7 +3636,7 @@ textarea {
 }
 
 .single-events-card:hover .events-content h3 {
-    color: #006938
+    color: #e32845
 }
 
 .single-events-card.style2 .events-content {
@@ -3662,7 +3662,7 @@ textarea {
 }
 
 .single-events-card.style2 .events-content .admin-and-date ul li a i {
-    color: #006938;
+    color: #e32845;
     margin-right: 7px
 }
 
@@ -3685,7 +3685,7 @@ textarea {
 }
 
 .single-events-card.style-3 .events-content .date-and-read-more ul li p i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 2px;
     margin-right: 7px
@@ -3731,9 +3731,9 @@ textarea {
 }
 
 .events-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .events-slider.owl-theme .owl-dots {
@@ -3741,7 +3741,7 @@ textarea {
 }
 
 .events-slider.owl-theme .owl-dots .owl-dot span {
-    background-color: #006938;
+    background-color: #e32845;
     margin: 10px 10px 0;
     background-color: #dbdada;
     height: 18px;
@@ -3757,7 +3757,7 @@ textarea {
     content: "";
     height: 10px;
     width: 10px;
-    background-color: #006938;
+    background-color: #e32845;
     border-radius: 100%;
     top: 4px;
     left: 4px
@@ -3822,7 +3822,7 @@ textarea {
     height: 8px;
     width: 8px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: 0;
     top: 7px
 }
@@ -3852,7 +3852,7 @@ textarea {
     line-height: 40px;
     border-radius: 100%;
     background-color: #f4f6f9;
-    color: #006938;
+    color: #e32845;
     font-size: 18px;
     text-align: center;
     display: inline-block;
@@ -3860,7 +3860,7 @@ textarea {
 }
 
 .about-lecturer .social-content ul li a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     transform: translateY(-5px)
 }
@@ -3926,7 +3926,7 @@ textarea {
 }
 
 .single-podcasts-card .podcast-content span {
-    color: #006938;
+    color: #e32845;
     display: inline-block;
     margin-bottom: 10px
 }
@@ -3954,7 +3954,7 @@ textarea {
     line-height: 45px;
     border-radius: 100%;
     font-size: 24px;
-    background-color: #006938;
+    background-color: #e32845;
     display: inline-block;
     text-align: center;
     transition: all ease .5s
@@ -3969,7 +3969,7 @@ textarea {
 }
 
 .single-podcasts-card .podcast-content .play-icon:hover {
-    background-color: #006938;
+    background-color: #e32845;
     padding-top: 5px
 }
 
@@ -3999,7 +3999,7 @@ textarea {
 
 .single-podcasts-card.style2 .podcasts-image .play-btn:hover {
     background-color: #fff;
-    color: #006938;
+    color: #e32845;
     border-color: #fff
 }
 
@@ -4015,7 +4015,7 @@ textarea {
 
 .single-podcasts-card.style2 .podcast-content ul li {
     list-style-type: none;
-    color: #006938
+    color: #e32845
 }
 
 .single-podcasts-card.style2 .podcast-content ul li.date {
@@ -4028,7 +4028,7 @@ textarea {
     content: "";
     height: 1px;
     width: 30px;
-    background-color: #006938;
+    background-color: #e32845;
     top: 12px;
     left: 0
 }
@@ -4050,7 +4050,7 @@ textarea {
     font-size: 24px;
     border: 1px solid #fff;
     background-color: #fff;
-    color: #006938;
+    color: #e32845;
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -4059,13 +4059,13 @@ textarea {
 }
 
 .single-podcasts-card.style3 .podcasts-image .play-btn:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
 .single-podcasts-card.style3 .podcasts-image .episodes p {
     background-color: #fff;
-    color: #006938;
+    color: #e32845;
     padding: 10px 15px;
     position: absolute;
     top: 30px;
@@ -4078,7 +4078,7 @@ textarea {
 }
 
 .single-podcasts-card.style3 .podcast-content .date p {
-    color: #006938;
+    color: #e32845;
     font-weight: 500;
     position: relative;
     padding-left: 15px
@@ -4090,7 +4090,7 @@ textarea {
     height: 8px;
     width: 8px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: 0;
     top: 7px
 }
@@ -4131,12 +4131,12 @@ textarea {
 }
 
 .categories ul li i {
-    color: #006938;
+    color: #e32845;
     padding-right: 10px
 }
 
 .categories ul li:hover a {
-    color: #006938
+    color: #e32845
 }
 
 .categories.style-2 {
@@ -4195,7 +4195,7 @@ textarea {
 }
 
 .subscribe-area .newsletter-form .validation-danger {
-    color: #006938;
+    color: #e32845;
     margin-top: 5px
 }
 
@@ -4253,7 +4253,7 @@ textarea {
 
 .single-news-card .news-content .list ul li i {
     padding-right: 7px;
-    color: #006938
+    color: #e32845
 }
 
 .single-news-card .news-content .list ul li a {
@@ -4272,7 +4272,7 @@ textarea {
 }
 
 .single-news-card:hover .news-content h3 {
-    color: #006938
+    color: #e32845
 }
 
 .single-news-card.style2 .news-content {
@@ -4322,9 +4322,9 @@ textarea {
 }
 
 .news-slider.owl-theme .owl-nav [class*=owl-]:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .news-slider.owl-theme .owl-dots {
@@ -4332,7 +4332,7 @@ textarea {
 }
 
 .news-slider.owl-theme .owl-dots .owl-dot span {
-    background-color: #006938;
+    background-color: #e32845;
     margin: 0 15px;
     background-color: #ded6d6;
     height: 18px;
@@ -4348,7 +4348,7 @@ textarea {
     content: "";
     height: 10px;
     width: 10px;
-    background-color: #006938;
+    background-color: #e32845;
     border-radius: 100%;
     top: 4px;
     left: 4px
@@ -4398,7 +4398,7 @@ textarea {
 
 .latest-news-simple-card .news-content .list ul li i {
     padding-right: 7px;
-    color: #006938
+    color: #e32845
 }
 
 .latest-news-simple-card .news-content .list ul li a {
@@ -4454,7 +4454,7 @@ textarea {
 }
 
 .category-list ul li:hover a {
-    color: #006938
+    color: #e32845
 }
 
 .related-post-area {
@@ -4493,7 +4493,7 @@ textarea {
 }
 
 .related-post-area .related-post-box .related-post-content h4:hover a {
-    color: #006938
+    color: #e32845
 }
 
 .related-post-area .related-post-box .related-post-content img {
@@ -4506,7 +4506,7 @@ textarea {
 }
 
 .related-post-area .related-post-box .related-post-content p i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 3px;
     margin-right: 5px
@@ -4519,7 +4519,7 @@ textarea {
 }
 
 .related-post-area .related-post-box:hover .tranding-content h4 a {
-    color: #006938
+    color: #e32845
 }
 
 .news-details .news-simple-card img {
@@ -4542,7 +4542,7 @@ textarea {
 
 .news-details .news-simple-card .list ul li i {
     padding-right: 7px;
-    color: #006938
+    color: #e32845
 }
 
 .news-details .news-simple-card .list ul li a {
@@ -4574,7 +4574,7 @@ textarea {
     height: 10px;
     width: 10px;
     border-radius: 100%;
-    background-color: #006938;
+    background-color: #e32845;
     left: -30px;
     top: 5px
 }
@@ -4606,7 +4606,7 @@ textarea {
 .tags-and-share .tags ul li span {
     font-size: 18px;
     font-weight: 500;
-    color: #022b4a;
+    color: #1f2c75;
     margin-right: 5px
 }
 
@@ -4617,7 +4617,7 @@ textarea {
 }
 
 .tags-and-share .tags ul li a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .tags-and-share .tags ul li a::before {
@@ -4646,7 +4646,7 @@ textarea {
 .tags-and-share .share ul li span {
     font-size: 18px;
     font-weight: 500;
-    color: #022b4a;
+    color: #1f2c75;
     margin-right: 15px
 }
 
@@ -4656,19 +4656,19 @@ textarea {
     line-height: 38px;
     border-radius: 100%;
     background-color: #f4f6f9;
-    color: #006938;
+    color: #e32845;
     display: inline-block;
     text-align: center;
     transition: all ease .5s
 }
 
 .tags-and-share .share ul li a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff
 }
 
 .footer-area {
-    background-color: #022b4af2;
+    background-color: #1f2c75f2;
     position: relative;
     z-index: 1
 }
@@ -4746,11 +4746,11 @@ textarea {
 }
 
 .footer-widjet .list ul li a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .copyright-area {
-    background-color: #022b4a
+    background-color: #1f2c75
 }
 
 .copyright {
@@ -4766,7 +4766,7 @@ textarea {
 }
 
 .copyright .copy p a {
-    color: #006938
+    color: #e32845
 }
 
 .copyright .social-content ul {
@@ -4793,7 +4793,7 @@ textarea {
 }
 
 .copyright .social-content ul li a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .page-banner-area {
@@ -4812,7 +4812,7 @@ textarea {
     width: 100%;
     left: 0;
     top: 0;
-    background: #022b4ac9
+    background: #1f2c75c9
 }
 
 .page-banner-area.bg-1 {
@@ -4879,7 +4879,7 @@ textarea {
 }
 
 .student-life-card .tags {
-    background-color: #006938;
+    background-color: #e32845;
     padding: 10px 15px;
     position: absolute;
     left: 20px;
@@ -4914,7 +4914,7 @@ textarea {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #006938;
+    background-color: #e32845;
     padding: 8px 12px
 }
 
@@ -4928,7 +4928,7 @@ textarea {
 }
 
 .single-alumni-events-card .alumni-content .time p i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 2px;
     margin-right: 5px
@@ -4940,7 +4940,7 @@ textarea {
 }
 
 .single-alumni-events-card .alumni-content .location p i {
-    color: #006938;
+    color: #e32845;
     position: relative;
     top: 2px;
     margin-right: 5px
@@ -5030,16 +5030,16 @@ textarea {
 }
 
 .contacts-form .form-group .form-control:focus {
-    border: 1px solid #006938
+    border: 1px solid #e32845
 }
 
 .contacts-form .list-unstyled {
-    color: #006938;
+    color: #e32845;
     margin-top: 7px
 }
 
 .contacts-form .text-danger {
-    color: #006938;
+    color: #e32845;
     font-size: 16px;
     margin-top: 7px
 }
@@ -5049,8 +5049,8 @@ textarea {
 }
 
 .contacts-form .form-check .form-check-input:checked {
-    background-color: #006938;
-    border-color: #006938
+    background-color: #e32845;
+    border-color: #e32845
 }
 
 .contacts-form .form-check .form-check-input:focus {
@@ -5088,8 +5088,8 @@ textarea {
     height: 65px;
     width: 65px;
     line-height: 65px;
-    border: 1px solid #006938;
-    color: #006938;
+    border: 1px solid #e32845;
+    color: #e32845;
     text-align: center;
     border-radius: 100%;
     margin: auto;
@@ -5111,7 +5111,7 @@ textarea {
 }
 
 .contact-and-address .contact-and-address-content .contact-card p a:hover {
-    color: #006938
+    color: #e32845
 }
 
 .contact-and-address .social-media {
@@ -5146,12 +5146,12 @@ textarea {
     text-align: center;
     display: inline-block;
     background-color: #eee;
-    color: #006938;
+    color: #e32845;
     transition: all ease .5s
 }
 
 .contact-and-address .social-media ul li a:hover {
-    background-color: #006938;
+    background-color: #e32845;
     color: #fff;
     transform: translateY(-5px)
 }
@@ -5161,7 +5161,7 @@ textarea {
     cursor: pointer;
     top: 87%;
     right: -10%;
-    background-color: #006938;
+    background-color: #e32845;
     z-index: 4;
     width: 50px;
     text-align: center;
@@ -5200,7 +5200,7 @@ textarea {
     height: 100%;
     border-radius: 100%;
     z-index: -1;
-    background-color: #006938;
+    background-color: #e32845;
     opacity: 0;
     visibility: hidden;
     transition: .5s
@@ -5208,7 +5208,7 @@ textarea {
 
 .go-top:hover {
     color: #fff;
-    background: #022b4a
+    background: #1f2c75
 }
 
 .go-top:hover::before {
@@ -5283,7 +5283,7 @@ textarea {
 .accordion .accordion-item .accordion-button {
     border: none;
     background-color: transparent;
-    color: #022b4a;
+    color: #1f2c75;
     font-size: 18px;
     font-weight: 700;
     position: relative;
@@ -5303,7 +5303,7 @@ textarea {
     background-image: unset;
     content: "";
     font-size: 20px;
-    color: #022b4a;
+    color: #1f2c75;
     text-align: center;
     content: "\ea13";
     font-family: remixicon !important;
@@ -5345,7 +5345,7 @@ textarea {
     content: "";
     height: 2px;
     width: 70px;
-    background-color: #006938;
+    background-color: #e32845;
     top: 43px
 }
 
@@ -5358,7 +5358,7 @@ textarea {
 }
 
 .login .form-check .form-check-input:checked {
-    background-color: #006938
+    background-color: #e32845
 }
 
 .login .form-check .form-check-input:focus {
@@ -5397,7 +5397,7 @@ textarea {
     content: "";
     height: 2px;
     width: 70px;
-    background-color: #006938;
+    background-color: #e32845;
     top: 43px
 }
 
@@ -5430,7 +5430,7 @@ textarea {
     content: "";
     height: 2px;
     width: 70px;
-    background-color: #006938;
+    background-color: #e32845;
     top: 43px
 }
 
@@ -5468,7 +5468,7 @@ textarea {
 
 .privacy-content .list ul li {
     font-weight: 600;
-    color: #022b4a;
+    color: #1f2c75;
     position: relative;
     padding-left: 20px;
     list-style-type: none;
@@ -5478,7 +5478,7 @@ textarea {
 .privacy-content .list ul li i {
     position: absolute;
     left: 0;
-    color: #006938
+    color: #e32845
 }
 
 .condition-content {
@@ -5507,7 +5507,7 @@ textarea {
 
 .condition-content .list ul li {
     font-weight: 600;
-    color: #022b4a;
+    color: #1f2c75;
     position: relative;
     padding-left: 20px;
     list-style-type: none;
@@ -5517,7 +5517,7 @@ textarea {
 .condition-content .list ul li i {
     position: absolute;
     left: 0;
-    color: #006938
+    color: #e32845
 }
 
 .error-area {
@@ -5539,12 +5539,12 @@ textarea {
     display: inline-block;
     line-height: 1;
     margin-right: 30px;
-    color: #006938;
+    color: #e32845;
     font-family: "source serif pro", serif
 }
 
 .error-area .top-content ul li:first-child {
-    color: #022b4a
+    color: #1f2c75
 }
 
 .error-area .top-content ul li:last-child {
@@ -5610,7 +5610,7 @@ textarea {
     font-weight: 700;
     height: 100px;
     width: 100px;
-    border: 6px double #006938;
+    border: 6px double #e32845;
     border-radius: 50px 0 0 0;
     margin-bottom: 30px;
     color: #fff
@@ -5619,7 +5619,7 @@ textarea {
 .coming-soon-area .coming-soon .list ul li span {
     font-size: 15px;
     font-weight: 500;
-    color: #006938
+    color: #e32845
 }
 
 .coming-soon-area .coming-soon .newsletter-form {
