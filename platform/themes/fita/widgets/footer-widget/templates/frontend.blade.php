@@ -4,9 +4,20 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="footer-logo-area">
                     <div>
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
-                             alt="logo">
-                        <span class="text-logo">{{ theme_option('logo-text')}}</span>
+                        <a href="{{ route('public.single') }}">
+                            @if(theme_option('logo'))
+                                <img
+                                    src="{{  RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                                    class="main-logo fita-main-logo" alt="logo">
+                            @else
+                                <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                                     alt="logo">
+                            @endif
+
+                        </a>
+                        <a href="{{theme_option('logo-text-link')}}">
+                            <span class="text-logo">{{theme_option('logo-text')}}</span>
+                        </a>
                     </div>
 
                     <p>{{ theme_option('short_description') }}</p>
