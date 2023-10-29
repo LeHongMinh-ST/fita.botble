@@ -4,9 +4,13 @@ namespace Botble\Department\Http\Controllers;
 
 use Botble\ACL\Models\User;
 use Botble\Base\Events\BeforeEditContentEvent;
+use Botble\Base\Traits\HasDeleteManyItemsTrait;
 use Botble\Department\Http\Requests\DepartmentRequest;
+use Botble\Department\Models\Department;
 use Botble\Department\Repositories\Interfaces\DepartmentInterface;
 use Botble\Base\Http\Controllers\BaseController;
+use Botble\Department\Repositories\Interfaces\DepartmentItemInterface;
+use Botble\Slug\Repositories\Interfaces\SlugInterface;
 use Illuminate\Http\Request;
 use Exception;
 use Botble\Department\Tables\DepartmentTable;
@@ -17,20 +21,27 @@ use Botble\Base\Http\Responses\BaseHttpResponse;
 use Botble\Department\Forms\DepartmentForm;
 use Botble\Base\Forms\FormBuilder;
 use Illuminate\Support\Facades\Auth;
+use Theme;
 
 class DepartmentController extends BaseController
 {
+    use HasDeleteManyItemsTrait;
     /**
      * @var DepartmentInterface
      */
     protected $departmentRepository;
+    protected $departmentItemRepository;
 
     /**
      * @param DepartmentInterface $departmentRepository
      */
-    public function __construct(DepartmentInterface $departmentRepository)
+    public function __construct(
+        DepartmentInterface $departmentRepository,
+        DepartmentItemInterface $departmentItemRepository
+    )
     {
         $this->departmentRepository = $departmentRepository;
+        $this->departmentItemRepository = $departmentItemRepository;
     }
 
     /**
@@ -89,7 +100,9 @@ class DepartmentController extends BaseController
 
         page_title()->setTitle(trans('plugins/department::department.edit') . ' "' . $department->name . '"');
 
-        return $formBuilder->create(DepartmentForm::class, ['model' => $department])->renderForm();
+        return $formBuilder
+            ->create(DepartmentForm::class, ['model' => $department])
+            ->renderForm();
     }
 
     /**
@@ -158,5 +171,28 @@ class DepartmentController extends BaseController
         }
 
         return $response->setMessage(trans('core/base::notices.delete_success_message'));
+    }
+
+    public function getBySlug($slug, SlugInterface $slugRepository)
+    {
+        $slug = $slugRepository->getFirstBy(['key' => $slug, 'reference_type' => Department::class]);
+
+        if (!$slug) {
+            abort(404);
+        }
+
+        $department = $this->departmentRepository->getFirstBy(['id' => $slug->reference_id]);
+        if (!$department) {
+            abort(404);
+        }
+        $departmentItems = $this->departmentItemRepository->allBy([
+            'department_id' => $department->id
+        ]);
+        if (!$departmentItems) {
+            abort(404);
+        }
+        do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, DEPARTMENT_MODULE_SCREEN_NAME, $department);
+
+        return Theme::scope('department-items', compact('departmentItems', 'department'), 'plugins/department::themes.templates.department-items')->render();
     }
 }

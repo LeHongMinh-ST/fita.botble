@@ -3,9 +3,9 @@
 namespace Botble\Department\Models;
 
 use Botble\Base\Traits\EnumCastable;
-use Botble\Base\Enums\BaseStatusEnum;
 use Botble\Base\Models\BaseModel;
 use Botble\Department\Enums\DepartmentStatusEnum;
+use Botble\Slug\Models\Slug;
 
 class Department extends BaseModel
 {
@@ -22,8 +22,8 @@ class Department extends BaseModel
      * @var array
      */
     protected $fillable = [
-        'code',
         'name',
+        'icon',
         'status',
         'created_by',
         'updated_by'
@@ -35,4 +35,23 @@ class Department extends BaseModel
     protected $casts = [
         'status' => DepartmentStatusEnum::class,
     ];
+
+    public function departmentItems()
+    {
+        return $this->hasMany(DepartmentItem::class)->orderBy('department_items.order');
+    }
+
+    public function slugable()
+    {
+        return $this->morphOne(Slug::class,'reference');
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function (Department $department) {
+            DepartmentItem::where('department_id', $department->id)->delete();
+        });
+    }
 }
