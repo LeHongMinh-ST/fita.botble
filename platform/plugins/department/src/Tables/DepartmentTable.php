@@ -56,9 +56,6 @@ class DepartmentTable extends TableAbstract
                 }
                 return Html::link(route('department.edit', $item->id), $item->name);
             })
-            ->editColumn('code', function ($item) {
-                return $item->code;
-            })
             ->editColumn('checkbox', function ($item) {
                 return $this->getCheckbox($item->id);
             })
@@ -83,8 +80,8 @@ class DepartmentTable extends TableAbstract
         $query = $this->repository->getModel()
             ->select([
                'id',
-               'code',
                'name',
+               'icon',
                'created_at',
                'status',
            ]);
@@ -105,10 +102,6 @@ class DepartmentTable extends TableAbstract
             'name' => [
                 'title' => trans('core/base::tables.name'),
                 'class' => 'text-start',
-            ],
-            'code' => [
-                'title' => trans('plugins/department::department.forms.code'),
-                'width' => '100px',
             ],
             'created_at' => [
                 'title' => trans('core/base::tables.created_at'),
@@ -143,11 +136,6 @@ class DepartmentTable extends TableAbstract
     public function getBulkChanges(): array
     {
         return [
-            'code' => [
-                'title'    => trans('plugins/department::department.forms.code'),
-                'type'     => 'text',
-                'validate' => 'required|max:10',
-            ],
             'name' => [
                 'title'    => trans('core/base::tables.name'),
                 'type'     => 'text',

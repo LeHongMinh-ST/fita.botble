@@ -1,5 +1,5 @@
 .fita-main-logo {
-    width: 50px;
+    width: 60px;
 }
 
 .paginations ul li span {
@@ -11,9 +11,21 @@
     border: 1px solid #eee;
     display: inline-block;
     transition: all ease .5s;
-    color: #111d5e;
+    color: #1f2c75;
     font-size: 18px;
     box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05)
+}
+
+.text-logo {
+    font-size: 29px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    color: #ffffff;
+    font-family: "source serif pro", serif;
+}
+
+.text-logo-mb {
+    color: #e32845;
 }
 
 
@@ -22,9 +34,9 @@
 }
 
 .paginations ul li.active span{
-    background-color: #2870a2;
+    background-color: #e32845;
     color: #fff;
-    border: 1px solid #2870a2
+    border: 1px solid #e32845
 }
 .language_bar_list li a img {
     margin-top: 3px;

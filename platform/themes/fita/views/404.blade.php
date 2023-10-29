@@ -2,27 +2,35 @@
     SeoHelper::setTitle(__('404 - Not found'));
     Theme::fireEventGlobalAssets();
 @endphp
+    <!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    {!! Theme::partial('header') !!}
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
+{!! apply_filters(THEME_FRONT_BODY, null) !!}
 
-{!! Theme::partial('header') !!}
-
-<div class="container error-page">
-    <div class="error-code">
-        404
-    </div>
-
-    <div class="error-border"></div>
-        <h4>{{ __('This may have occurred because of several reasons') }}:</h4>
-        <ul>
-            <li>{{ __('The page you requested does not exist.') }}</li>
-            <li>{{ __('The link you clicked is no longer.') }}</li>
-            <li>{{ __('The page may have moved to a new location.') }}</li>
-            <li>{{ __('An error may have occurred.') }}</li>
-            <li>{{ __('You are not authorized to view the requested resource.') }}</li>
-        </ul>
-        <br>
-        <strong>{!! BaseHelper::clean(__('Please try again in a few minutes, or alternatively return to the homepage by <a href=":link">clicking here</a>.', ['link' => route('public.index')])) !!}</strong>
+{!! Theme::partial('navbar') !!}
+<div class="error-area ptb-100">
+    <div class="container">
+        <div class="top-content">
+            <ul>
+                <li>4</li>
+                <li>0</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <h2>Error 404 : Page Not Found</h2>
+        <a href="{{route('public.index')}}" class="btn default-btn">Back To Homepage</a>
     </div>
 </div>
+
+
 {!! Theme::partial('footer') !!}
+
+{!! Theme::footer() !!}
+</body>
+</html>
 
 

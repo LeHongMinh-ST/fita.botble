@@ -23,7 +23,19 @@
     </div>
     <div class="main-content pt-100 pb-70">
         <div class="container">
-            {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
+            @if($page->template == 'with_right_sidebar')
+                <div class="row">
+                    <div class="col-lg-8">
+                        {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
+                    </div>
+                    <div class="col-lg-4">
+                        {!! dynamic_sidebar('right_sidebar') !!}
+                    </div>
+                </div>
+            @else
+                {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, BaseHelper::clean($page->content), $page) !!}
+
+            @endif
         </div>
     </div>
 

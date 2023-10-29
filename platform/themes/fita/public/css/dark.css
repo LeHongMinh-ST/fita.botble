@@ -74,7 +74,7 @@ Default CSS
   color: #f1f1f1 !important;
 }
 .theme-dark p a:hover {
-  color: #2870a2 !important;
+  color: #e32845 !important;
 }
 .theme-dark .bg-f4f6f9 {
   background-color: #0e0e0e;
@@ -86,7 +86,7 @@ Default CSS
   color: #ffffff !important;
 }
 .theme-dark .h1 a:hover, .theme-dark .h2 a:hover, .theme-dark .h3 a:hover, .theme-dark .h4 a:hover, .theme-dark .h5 a:hover, .theme-dark .h6 a:hover, .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
-  color: #2870a2 !important;
+  color: #e32845 !important;
 }
 .theme-dark .nav-bg-1 {
   background-color: #000000;
@@ -95,7 +95,7 @@ Default CSS
   background-color: #000000;
 }
 .theme-dark .navbar-area .navbar-brand .white-logo {
-  display: block;
+  display: inline-block;
 }
 .theme-dark .navbar-area .navbar-brand .main-logo {
   display: none;
@@ -104,10 +104,10 @@ Default CSS
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item:hover a, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item:focus a, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   background: #0e0e0e;
@@ -117,62 +117,62 @@ Default CSS
   border-bottom: 1px dashed #000000;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
   border-bottom: 1px dashed #000000;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #ffffff;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-  color: #2870a2;
+  color: #e32845;
 }
 .theme-dark .desktop-nav .navbar .others-options ul li .call-now a {
   color: #ffffff;
@@ -332,7 +332,7 @@ Default CSS
   color: #ffffff;
 }
 .theme-dark .additional-information .list ul li:hover {
-  background-color: #2870a2;
+  background-color: #e32845;
 }
 .theme-dark .single-alumni-events-card {
   background-color: #0e0e0e;

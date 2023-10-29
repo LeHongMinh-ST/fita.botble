@@ -2,7 +2,7 @@
 
 register_page_template([
     'default' => __('Default'),
-    'home' => __('Home')
+    'with_right_sidebar' => __('With right sidebar'),
 ]);
 
 
@@ -12,4 +12,17 @@ register_sidebar([
     'description' => __('This is a right sidebar for fita theme'),
 ]);
 
+register_sidebar([
+    'id' => 'footer_sidebar',
+    'name' => __('Footer sidebar'),
+    'description' => __('This is a footer sidebar for fita theme'),
+]);
+
+Form::component('themeIcon', Theme::getThemeNamespace() . '::partials.forms.fields.icons-field', [
+    'name',
+    'value'      => null,
+    'attributes' => [],
+]);
+
 RvMedia::setUploadPathAndURLToPublic();
+Menu::addMenuLocation('header-menu', __('Header menu'));

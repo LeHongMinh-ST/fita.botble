@@ -1,5 +1,7 @@
 <?php
 
+use Botble\Base\Enums\BaseStatusEnum;
+use Botble\Blog\Repositories\Interfaces\CategoryInterface;
 use Botble\Theme\Supports\ThemeSupport;
 
 app()->booted(function () {
@@ -16,9 +18,48 @@ app()->booted(function () {
         return Theme::partial('short-codes.custom-contact-form');
     });
 
-    add_shortcode('latest-new', 'Latest New', 'Latest New', function ($shortCode) {
-        return Theme::partial('short-codes.latest-new');
+    add_shortcode('latest-new', 'Latest New', 'Latest New', function ($shortcode) {
+        return Theme::partial('short-codes.latest-new', compact('shortcode'));
     });
+
+    shortcode()->setAdminConfig('site-features', function ($attributes) {
+        return Theme::partial('short-codes.latest-new-admin-config', compact('attributes'));
+    });
+
+    add_shortcode('site-features', __('Site features'), __('Site features'), function ($shortcode) {
+        return Theme::partial('short-codes.site-features', compact('shortcode'));
+    });
+
+    shortcode()->setAdminConfig('site-features', function ($attributes) {
+        return Theme::partial('short-codes.site-features-admin-config', compact('attributes'));
+    });
+
+    add_shortcode('about-section', __('About Section'), __('About Section'), function ($shortcode) {
+        return Theme::partial('short-codes.about-section', compact('shortcode'));
+    });
+
+    shortcode()->setAdminConfig('about-section', function ($attributes) {
+        return Theme::partial('short-codes.about-section-admin-config', compact('attributes'));
+    });
+
+    add_shortcode('event-section', __('Event Section'), __('Event Section'), function ($shortcode) {
+        return Theme::partial('short-codes.event-section', compact('shortcode'));
+    });
+
+    shortcode()->setAdminConfig('event-section', function ($attributes) {
+        $categories = app(CategoryInterface::class)->pluck('name', 'id',
+            ['status' => BaseStatusEnum::PUBLISHED]);
+        return Theme::partial('short-codes.event-section-admin-config',
+            compact( 'attributes', 'categories'));
+    });
+
+    add_shortcode('video-section', __('Video Section'), __('Video Section'), function ($shortcode) {
+        return Theme::partial('short-codes.video-section', compact('shortcode'));
+    });
+    shortcode()->setAdminConfig('video-section', function ($attributes) {
+        return Theme::partial('short-codes.video-section-admin-config', compact('attributes'));
+    });
+
 });
 
 

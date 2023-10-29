@@ -3,15 +3,22 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
                 <div class="header-left-content">
-                    <p>Get the latest updates and Sanu's response to COVID-19</p>
+                    <p>{!! theme_option('notice') !!}</p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <div class="header-right-content">
-                    <div class="list">
+                    <div class="list d-lg-flex justify-content-lg-end gap-3">
+                        {!!
+                            Menu::renderMenuLocation('header-menu', [
+                                'options' => [],
+                                'theme'   => true,
+                            ])
+                        !!}
                         <ul>
                             <li>
-                                {!! apply_filters('language_switcher') !!}
+                                {{--                                {!! apply_filters('language_switcher') !!}--}}
+                                {!! Theme::partial('language-switcher') !!}
                             </li>
                         </ul>
                     </div>
@@ -21,16 +28,29 @@
     </div>
 </div>
 
-<div class="navbar-area nav-bg-2">
+<div class="navbar-area nav-bg-1">
     <div class="mobile-responsive-nav">
         <div class="container">
             <div class="mobile-responsive-menu">
                 <div class="logo">
                     <a href="{{ route('public.single') }}">
-                        <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                        <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
-                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
+                        @if(theme_option('logo'))
+                            <img
+                                src="{{  RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                                class="main-logo fita-main-logo" alt="logo">
+                            <img
+                                src="{{ RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                                class=" fita-main-logo white-logo" alt="white-logo">
+                        @else
+                            <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                                 alt="logo">
+                            <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                                 alt="white-logo">
+                        @endif
+
+                    </a>
+                    <a href="{{theme_option('logo-text-link')}}">
+                        <span class="text-logo text-logo-mb">{{theme_option('logo-text')}}</span>
                     </a>
                 </div>
             </div>
@@ -40,10 +60,22 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ route('public.single') }}">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo" alt="logo">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo" alt="logo">
-                    <img src="{{ Theme::asset()->url('images/logo-vnua.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
-                    <img src="{{ Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo white-logo" alt="white-logo">
+                    @if(theme_option('logo'))
+                        <img
+                            src="{{  RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                            class="main-logo fita-main-logo" alt="logo">
+                        <img
+                            src="{{ RvMedia::getImageUrl(theme_option('logo'), null, false, RvMedia::getDefaultImage()) }} "
+                            class=" fita-main-logo white-logo" alt="white-logo">
+                    @else
+                        <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
+                             alt="logo">
+                        <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                             alt="white-logo">
+                    @endif
+                </a>
+                <a href="{{theme_option('logo-text-link')}}">
+                    <span class="text-logo">{{theme_option('logo-text')}}</span>
                 </a>
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     {!!
