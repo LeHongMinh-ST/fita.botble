@@ -3,6 +3,10 @@
 namespace Botble\Department\Providers;
 
 use Botble\Department\Models\Department;
+use Botble\Department\Models\DepartmentItem;
+use Botble\Department\Repositories\Caches\DepartmentItemCacheDecorator;
+use Botble\Department\Repositories\Eloquent\DepartmentItemRepository;
+use Botble\Department\Repositories\Interfaces\DepartmentItemInterface;
 use Illuminate\Support\ServiceProvider;
 use Botble\Department\Repositories\Caches\DepartmentCacheDecorator;
 use Botble\Department\Repositories\Eloquent\DepartmentRepository;
@@ -19,6 +23,10 @@ class DepartmentServiceProvider extends ServiceProvider
     {
         $this->app->bind(DepartmentInterface::class, function () {
             return new DepartmentCacheDecorator(new DepartmentRepository(new Department));
+        });
+
+        $this->app->bind(DepartmentItemInterface::class, function () {
+            return new DepartmentItemCacheDecorator(new DepartmentItemRepository(new DepartmentItem));
         });
 
         $this->setNamespace('plugins/department')->loadHelpers();
@@ -57,6 +65,13 @@ class DepartmentServiceProvider extends ServiceProvider
                 'url'         => route('department.index'),
                 'permissions' => ['department.index'],
             ]);
+        });
+
+        \SlugHelper::registerModule(Department::class);
+        \SlugHelper::setPrefix(Department::class, 'bo-mon');
+
+        $this->app->booted(function () {
+            $this->app->register(HookServiceProvider::class);
         });
     }
 }

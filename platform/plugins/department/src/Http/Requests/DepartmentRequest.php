@@ -17,17 +17,19 @@ class DepartmentRequest extends Request
      */
     public function rules()
     {
-        return [
+        $rules = [
             'name'   => 'required',
-            'code'   => 'required|unique:departments,code',
             'status' => Rule::in(DepartmentStatusEnum::values()),
         ];
+        if(!is_null($this->id)) {
+            $rules['code'] = "required|unique:departments,code,{$this->id},id";
+        }
+        return $rules;
     }
 
     public function attributes()
     {
         return [
-            'code' => trans('plugins/department::department.forms.code'),
             'name' => trans('core/base::forms.name'),
         ];
     }
