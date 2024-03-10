@@ -44,7 +44,7 @@
                         @else
                             <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
                                  alt="logo">
-                            <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                            <img src="{{ Theme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
                                  alt="white-logo">
                         @endif
 
@@ -70,7 +70,7 @@
                     @else
                         <img src="{{  Theme::asset()->url('images/logo.png') }} " class="main-logo fita-main-logo"
                              alt="logo">
-                        <img src="{{ heme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
+                        <img src="{{ Theme::asset()->url('images/logo.png') }} " class=" fita-main-logo white-logo"
                              alt="white-logo">
                     @endif
                 </a>
