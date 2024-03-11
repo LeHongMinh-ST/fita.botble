@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Blog\Models\Post;
 use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Enums\PostBaseStatusEnum;
 
 class PostSeeder extends BaseSeeder
 {
@@ -18,10 +18,10 @@ class PostSeeder extends BaseSeeder
                Post::chunk(100, function ($posts) {
             foreach ($posts as $post) {
                 if ($post->status == 'published') {
-                    $post->update(['status' => PostBaseStatusEnum::ACTIVE]);
+                    $post->update(['status' => PostStatusEnum::ACTIVE]);
                 }
                 else{
-                    $post->update(['status' => PostBaseStatusEnum::INACTIVE]);
+                    $post->update(['status' => PostStatusEnum::INACTIVE]);
                 }
             }
           });

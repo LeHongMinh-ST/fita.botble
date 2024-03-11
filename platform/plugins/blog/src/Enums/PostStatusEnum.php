@@ -6,17 +6,14 @@ use Botble\Base\Supports\Enum;
 use Html;
 
 /**
- * @method static PostBaseStatusEnum ACTIVE()
- * @method static PostBaseStatusEnum INACTIVE()
+ * @method static PostStatusEnum ACTIVE()
+ * @method static PostStatusEnum INACTIVE()
  */
-class PostBaseStatusEnum extends Enum
+class PostStatusEnum extends Enum
 {
-    public const INACTIVE = 'Inactive';
-    public const ACTIVE = 'Active';
-    
-    /**
-     * @var string
-     */
+    public const INACTIVE = 'inactive';
+    public const ACTIVE = 'active';
+
     public static $langPath = 'core/base::enums.statuses';
 
     /**

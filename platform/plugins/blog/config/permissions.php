@@ -21,6 +21,11 @@ return [
         'parent_flag' => 'posts.index',
     ],
     [
+        'name'        => 'Confirm',
+        'flag'        => 'posts.confirm',
+        'parent_flag' => 'posts.index',
+    ],
+    [
         'name'        => 'Delete',
         'flag'        => 'posts.destroy',
         'parent_flag' => 'posts.index',

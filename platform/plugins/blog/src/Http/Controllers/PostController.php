@@ -11,6 +11,7 @@ use Botble\Base\Forms\FormBuilder;
 use Botble\Base\Http\Controllers\BaseController;
 use Botble\Base\Http\Responses\BaseHttpResponse;
 use Botble\Base\Traits\HasDeleteManyItemsTrait;
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Blog\Forms\PostForm;
 use Botble\Blog\Http\Requests\PostRequest;
 use Botble\Blog\Models\Post;
@@ -26,7 +27,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\View\View;
 use Throwable;
-use Botble\Blog\Enums\PostBaseStatusEnum;
 
 class PostController extends BaseController
 {
@@ -101,20 +101,13 @@ class PostController extends BaseController
         /**
          * @var Post $post
          */
-
-        if (auth()->user()->hasPermission('Confirm')) {
-            $status = $request->input('status', PostBaseStatusEnum::INACTIVE);
-        } else {
-            $status = PostBaseStatusEnum::INACTIVE;
-        }
         $post = $this->postRepository->createOrUpdate(array_merge($request->input(), [
             'author_id'   => Auth::id(),
             'author_type' => User::class,
-            //'status'      => PostBaseStatusEnum::INACTIVE,
-            'status'      => $status,
+            'status'      => $request->input('status', PostStatusEnum::INACTIVE),
 
         ]));
-        
+
         event(new CreatedContentEvent(POST_MODULE_SCREEN_NAME, $request, $post));
 
         $tagService->execute($request, $post);
@@ -160,8 +153,13 @@ class PostController extends BaseController
         BaseHttpResponse $response
     ) {
         $post = $this->postRepository->findOrFail($id);
+        $payload = $request->input();
 
-        $post->fill($request->input());
+        if($post->status != $request->get('status') && $request->get('status')) {
+            $payload['confirm_user'] = auth()->user()->id;
+            $payload['confirm_at'] = now();
+        }
+        $post->fill($payload);
 
         $this->postRepository->createOrUpdate($post);
 

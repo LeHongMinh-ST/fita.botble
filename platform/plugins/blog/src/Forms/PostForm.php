@@ -2,9 +2,9 @@
 
 namespace Botble\Blog\Forms;
 
-use Botble\Blog\Enums\PostBaseStatusEnum;
 use Botble\Base\Forms\Fields\TagField;
 use Botble\Base\Forms\FormAbstract;
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Blog\Forms\Fields\CategoryMultiField;
 use Botble\Blog\Http\Requests\PostRequest;
 use Botble\Blog\Models\Post;
@@ -84,8 +84,6 @@ class PostForm extends FormAbstract
                     'with-short-code' => true,
                 ],
             ])
-
-
             ->add('categories[]', 'categoryMulti', [
                 'label'      => trans('plugins/blog::posts.form.categories'),
                 'label_attr' => ['class' => 'control-label required'],
@@ -116,15 +114,12 @@ class PostForm extends FormAbstract
                 'choices'    => get_post_formats(true),
             ]);
         }
-        // dd(auth()->user()->isSuperUser());
-        // dd(auth()->user()->hasPermission('Confirm'), auth()->user()->permissions);
-        // dd(auth()->user(), auth()->user()->isSuperUser());
-        
+
         if(auth()->user()->hasPermission('Confirm') || auth()->user()->isSuperUser()){
             $this->addAfter('content', 'status', 'customSelect', [
                 'label'      => trans('core/base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
-                'choices'    => PostBaseStatusEnum::labels(),
+                'choices'    => PostStatusEnum::labels(),
             ])->setBreakFieldPoint('status');
         }
 
