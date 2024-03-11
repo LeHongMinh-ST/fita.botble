@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\View\View;
 use Throwable;
 use Botble\Blog\Enums\PostBaseStatusEnum;
-
+use Illuminate\Support\Carbon;
 class PostController extends BaseController
 {
     use HasDeleteManyItemsTrait;
@@ -72,6 +72,7 @@ class PostController extends BaseController
         page_title()->setTitle(trans('plugins/blog::posts.menu_name'));
 
         return $dataTable->renderTable();
+
     }
 
     /**
@@ -161,9 +162,19 @@ class PostController extends BaseController
     ) {
         $post = $this->postRepository->findOrFail($id);
 
+        //
+        $oldStatus = $post->status;
+
         $post->fill($request->input());
 
         $this->postRepository->createOrUpdate($post);
+
+        // 
+        if ($oldStatus !== $post->status) {
+            $post->confirm_user = auth()->user()->id; 
+            $post->confirm_at = Carbon::now();
+            $this->postRepository->createOrUpdate($post);
+        }
 
         event(new UpdatedContentEvent(POST_MODULE_SCREEN_NAME, $request, $post));
 

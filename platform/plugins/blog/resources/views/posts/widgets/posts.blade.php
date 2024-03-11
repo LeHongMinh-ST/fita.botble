@@ -9,7 +9,8 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($posts as $post)
+            @foreach($posts as $post)   
+
                 <tr>
                     <td>{{ $loop->index + 1 }}</td>
                     <td>@if ($post->slug) <a href="{{ $post->url }}" target="_blank">{{ Str::limit($post->name, 80) }}</a> @else <strong>{{ Str::limit($post->name, 80) }}</strong> @endif</td>
@@ -27,3 +28,5 @@
 @else
     @include('core/dashboard::partials.no-data', ['message' => trans('plugins/blog::posts.no_new_post_now')])
 @endif
+
+

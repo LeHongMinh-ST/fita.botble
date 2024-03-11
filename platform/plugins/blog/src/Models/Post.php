@@ -69,6 +69,8 @@ class Post extends BaseModel
         'status',
         'author_id',
         'author_type',
+        'confirm_user',
+        'confirm_at',
     ];
 
     /**

@@ -2,7 +2,7 @@
 
 namespace Botble\Blog\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use Botble\Blog\Enums\PostBaseStatusEnum;
 use Botble\Blog\Repositories\Interfaces\PostInterface;
 use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Eloquent;
@@ -19,7 +19,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->where([
-                'status'      => BaseStatusEnum::PUBLISHED,
+                'status'      => PostBaseStatusEnum::ACTIVE(),
                 'is_featured' => 1,
             ])
             ->limit($limit)
@@ -35,7 +35,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     public function getListPostNonInList(array $selected = [], $limit = 7, array $with = [])
     {
         $data = $this->model
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->whereNotIn('id', $selected)
             ->limit($limit)
             ->with($with)
@@ -50,7 +50,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     public function getRelated($id, $limit = 3)
     {
         $data = $this->model
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->where('id', '!=', $id)
             ->limit($limit)
             ->with('slugable')
@@ -90,7 +90,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
         }
 
         $data = $this->model
-            ->where('posts.status', BaseStatusEnum::PUBLISHED)
+            ->where('posts.status', PostBaseStatusEnum::ACTIVE())
             ->join('post_categories', 'post_categories.post_id', '=', 'posts.id')
             ->join('categories', 'post_categories.category_id', '=', 'categories.id')
             ->whereIn('post_categories.category_id', $categoryId)
@@ -113,7 +113,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->where([
-                'status'    => BaseStatusEnum::PUBLISHED,
+                'status'    => PostBaseStatusEnum::ACTIVE(),
                 'author_id' => $authorId,
             ])
             ->with('slugable')
@@ -129,7 +129,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->with('slugable')
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->orderBy('created_at', 'desc');
 
         return $this->applyBeforeExecuteQuery($data)->get();
@@ -142,7 +142,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->with('slugable', 'categories', 'categories.slugable', 'author')
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->whereHas('tags', function ($query) use ($tag) {
                 /**
                  * @var Builder $query
@@ -159,7 +159,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
      */
     public function getRecentPosts($limit = 5, $categoryId = 0)
     {
-        $data = $this->model->where(['status' => BaseStatusEnum::PUBLISHED]);
+        $data = $this->model->where(['status' => PostBaseStatusEnum::ACTIVE()]);
 
         if ($categoryId != 0) {
             $data = $data
@@ -182,7 +182,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->with('slugable')
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status',PostBaseStatusEnum::ACTIVE())
             ->where(function ($query) use ($keyword) {
                 $query->addSearch('name', $keyword);
             })
@@ -209,7 +209,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
             ->orderBy('created_at', 'desc');
 
         if ($active) {
-            $data = $data->where('status', BaseStatusEnum::PUBLISHED);
+            $data = $data->where('status', PostBaseStatusEnum::ACTIVE());
         }
 
         return $this->applyBeforeExecuteQuery($data)->paginate($perPage);
@@ -223,7 +223,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
         $data = $this->model
             ->with('slugable')
             ->orderBy('views', 'desc')
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->limit($limit);
 
         if (!empty(Arr::get($args, 'where'))) {
@@ -288,7 +288,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
         $order = Arr::get($filters, 'order', 'desc');
 
         $data = $data
-            ->where('status', BaseStatusEnum::PUBLISHED)
+            ->where('status', PostBaseStatusEnum::ACTIVE())
             ->orderBy($orderBy, $order);
 
         return $this->applyBeforeExecuteQuery($data)->paginate((int)$filters['per_page']);
