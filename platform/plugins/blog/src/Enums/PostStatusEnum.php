@@ -14,7 +14,7 @@ class PostStatusEnum extends Enum
     public const INACTIVE = 'inactive';
     public const ACTIVE = 'active';
 
-    public static $langPath = 'core/base::enums.statuses';
+    public static $langPath = 'plugins/blog::posts.statuses';
 
     /**
      * @return string
