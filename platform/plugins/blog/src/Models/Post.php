@@ -4,14 +4,13 @@ namespace Botble\Blog\Models;
 
 use Botble\ACL\Models\User;
 use Botble\Base\Traits\EnumCastable;
-use Botble\Base\Enums\BaseStatusEnum;
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Revision\RevisionableTrait;
 use Botble\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Str;
-
 class Post extends BaseModel
 {
     use RevisionableTrait;
@@ -70,13 +69,16 @@ class Post extends BaseModel
         'status',
         'author_id',
         'author_type',
+        'confirm_user',
+        'confirm_at'
     ];
 
     /**
      * @var array
      */
     protected $casts = [
-        'status' => BaseStatusEnum::class,
+        'status' => PostStatusEnum::class,
+        'confirm_at' => 'datetime',
     ];
 
     /**
@@ -86,6 +88,11 @@ class Post extends BaseModel
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class)->withDefault();
+    }
+
+    public function comfirmer(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'confirm_user');
     }
 
     /**

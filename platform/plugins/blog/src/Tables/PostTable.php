@@ -4,6 +4,7 @@ namespace Botble\Blog\Tables;
 
 use BaseHelper;
 use Botble\Base\Enums\BaseStatusEnum;
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Blog\Exports\PostExport;
 use Botble\Blog\Repositories\Interfaces\CategoryInterface;
 use Botble\Blog\Repositories\Interfaces\PostInterface;
@@ -212,8 +213,8 @@ class PostTable extends TableAbstract
             'status'     => [
                 'title'    => trans('core/base::tables.status'),
                 'type'     => 'customSelect',
-                'choices'  => BaseStatusEnum::labels(),
-                'validate' => 'required|in:' . implode(',', BaseStatusEnum::values()),
+                'choices'  => PostStatusEnum::labels(),
+                'validate' => 'required|in:' . implode(',', PostStatusEnum::values()),
             ],
             'category'   => [
                 'title'    => trans('plugins/blog::posts.category'),

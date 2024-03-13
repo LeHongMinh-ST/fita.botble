@@ -25,6 +25,7 @@ class PublicController extends Controller
      */
     public function getSearch(Request $request, PostInterface $postRepository)
     {
+        dd(123123);
         $query = $request->input('q');
 
         $title = __('Search result for: ":query"', compact('query'));
@@ -73,6 +74,7 @@ class PublicController extends Controller
      */
     public function getPost($slug, BlogService $blogService)
     {
+        dd(123);
         $slug = SlugHelper::getSlug($slug, SlugHelper::getPrefix(Post::class));
 
         if (!$slug) {
