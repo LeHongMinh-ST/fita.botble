@@ -34,7 +34,7 @@ class BlogService
 
         $condition = [
             'id'     => $slug->reference_id,
-            'status' => PostStatusEnum::ACTIVE,
+            'status' => BaseStatusEnum::PUBLISHED,
         ];
 
         if (Auth::check() && request()->input('preview')) {
@@ -43,6 +43,8 @@ class BlogService
 
         switch ($slug->reference_type) {
             case Post::class:
+                $condition['status'] = PostStatusEnum::ACTIVE;
+
                 $post = app(PostInterface::class)
                     ->getFirstBy(
                         $condition,
