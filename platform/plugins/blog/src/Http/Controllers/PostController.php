@@ -162,24 +162,19 @@ class PostController extends BaseController
     ) {
         $post = $this->postRepository->findOrFail($id);
 
-        //
         $oldStatus = $post->status;
-
         $post->fill($request->input());
 
-        $this->postRepository->createOrUpdate($post);
-
-        // 
-        if ($oldStatus !== $post->status) {
+        $newStatus = $request->input('status');
+        if ($newStatus != $oldStatus && !empty($newStatus)) {
             $post->confirm_user = auth()->user()->id; 
-            $post->confirm_at = Carbon::now();
-            $this->postRepository->createOrUpdate($post);
+            $post->confirm_at = now();
         }
 
+        $this->postRepository->createOrUpdate($post);
+    
         event(new UpdatedContentEvent(POST_MODULE_SCREEN_NAME, $request, $post));
-
         $tagService->execute($request, $post);
-
         $categoryService->execute($request, $post);
 
         return $response
