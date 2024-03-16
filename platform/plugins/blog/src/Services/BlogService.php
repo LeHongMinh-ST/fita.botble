@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Auth;
 use RvMedia;
 use SeoHelper;
 use Theme;
+use Botble\Blog\Enums\PostBaseStatusEnum;
+
 
 class BlogService
 {
@@ -42,6 +44,7 @@ class BlogService
 
         switch ($slug->reference_type) {
             case Post::class:
+                $condition['status'] = PostBaseStatusEnum::ACTIVE();
                 $post = app(PostInterface::class)
                     ->getFirstBy(
                         $condition,

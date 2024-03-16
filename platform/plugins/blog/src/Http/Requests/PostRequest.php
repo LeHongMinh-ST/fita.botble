@@ -2,7 +2,6 @@
 
 namespace Botble\Blog\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
 use Botble\Blog\Supports\PostFormat;
 use Botble\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
@@ -21,10 +20,8 @@ class PostRequest extends Request
             'name'        => 'required|max:255',
             'description' => 'max:400',
             'categories'  => 'required',
-            'status'      => Rule::in(BaseStatusEnum::values()),
-            //'status' =>  ['required', 'in:' . implode(',', PostBaseStatusEnum::toArray())],
-            //'status' => auth()->user()->hasPermission('Confirm') ? ['nullable'] : ['required', 'in:' . implode(',', PostBaseStatusEnum::toArray())],
-            'status' => auth()->user()->hasPermission('Confirm') ? ['nullable', 'in:' . implode(',', PostBaseStatusEnum::toArray())] : ['required', 'in:' . PostBaseStatusEnum::INACTIVE],
+            'status'      => Rule::in(PostBaseStatusEnum::values()),
+            'status' => auth()->user()->hasPermission('Confirm') ? ['nullable', 'in:' . implode(',', PostBaseStatusEnum::toArray())] : [ 'in:' . PostBaseStatusEnum::INACTIVE],
             
         ];
 

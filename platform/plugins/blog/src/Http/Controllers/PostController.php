@@ -111,7 +111,6 @@ class PostController extends BaseController
         $post = $this->postRepository->createOrUpdate(array_merge($request->input(), [
             'author_id'   => Auth::id(),
             'author_type' => User::class,
-            //'status'      => PostBaseStatusEnum::INACTIVE,
             'status'      => $status,
 
         ]));

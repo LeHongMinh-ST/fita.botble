@@ -3,7 +3,6 @@
 namespace Botble\Blog\Tables;
 
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
 use Botble\Blog\Exports\PostExport;
 use Botble\Blog\Repositories\Interfaces\CategoryInterface;
 use Botble\Blog\Repositories\Interfaces\PostInterface;
@@ -13,6 +12,7 @@ use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\DataTables;
+use Botble\Blog\Enums\PostBaseStatusEnum;
 
 class PostTable extends TableAbstract
 {
@@ -212,8 +212,8 @@ class PostTable extends TableAbstract
             'status'     => [
                 'title'    => trans('core/base::tables.status'),
                 'type'     => 'customSelect',
-                'choices'  => BaseStatusEnum::labels(),
-                'validate' => 'required|in:' . implode(',', BaseStatusEnum::values()),
+                'choices'  => PostBaseStatusEnum::labels(),
+                'validate' => 'required|in:' . implode(',', PostBaseStatusEnum::values()),
             ],
             'category'   => [
                 'title'    => trans('plugins/blog::posts.category'),
