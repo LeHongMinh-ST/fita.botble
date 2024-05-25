@@ -4,6 +4,7 @@ namespace Botble\Blog\Services;
 
 use Botble\Base\Enums\BaseStatusEnum;
 use Botble\Base\Supports\Helper;
+use Botble\Blog\Enums\PostStatusEnum;
 use Botble\Blog\Models\Category;
 use Botble\Blog\Models\Post;
 use Botble\Blog\Models\Tag;
@@ -42,6 +43,8 @@ class BlogService
 
         switch ($slug->reference_type) {
             case Post::class:
+                $condition['status'] = PostStatusEnum::ACTIVE;
+
                 $post = app(PostInterface::class)
                     ->getFirstBy(
                         $condition,
